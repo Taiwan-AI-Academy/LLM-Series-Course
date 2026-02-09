@@ -7,7 +7,6 @@
 **來源：** 財團法人台灣人工智慧學校基金會  
 **聯絡信箱：** hi@aiacademy.tw
 
-![AIA Logo](images/logo.png)
 
 ---
 
