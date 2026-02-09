@@ -1,6 +1,6 @@
 # Prompt Template & Prompt
 
-![image.png](Prompt%20Template%20&%20Prompt/image.png)
+![image.png](../assets/Prompt%20Template%20&%20Prompt/image.png)
 
 ### **1. Creating Template Object**
 

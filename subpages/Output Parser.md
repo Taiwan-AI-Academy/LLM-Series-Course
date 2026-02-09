@@ -1,6 +1,6 @@
 # Output Parser
 
-![image.png](Output%20Parser/image.png)
+![image.png](../assets/Output%20Parser/image.png)
 
 展示 **Output Parsers** 在 LangChain 中的概念與應用，主要用於從模型返回的輸出中提取結構化資訊，而不是僅僅返回純文字或 AIMessage。以下是對這張圖的詳細解釋：
 

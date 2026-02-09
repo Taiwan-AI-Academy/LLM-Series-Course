@@ -1,6 +1,6 @@
 # Messages
 
-![image.png](Messages/image.png)
+![image.png](../assets/Messages/image.png)
 
 ## **1. Messages 的核心概念**
 

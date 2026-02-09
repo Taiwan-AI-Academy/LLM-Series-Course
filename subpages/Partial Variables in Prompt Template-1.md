@@ -1,6 +1,6 @@
 # Partial Variables in Prompt Template-1
 
-![image.png](Partial%20Variables%20in%20Prompt%20Template-1/image.png)
+![image.png](../assets/Partial%20Variables%20in%20Prompt%20Template-1/image.png)
 
 展示 **部分變數 (Partial Variables)** 的概念，說明在生成 Prompt 時，部分變數是由 **用戶輸入** 提供，而其他部分可能來自於內部系統（Internal System）。這是一種動態填充 Prompt 的方法，常用於更靈活的應用場景。
 
