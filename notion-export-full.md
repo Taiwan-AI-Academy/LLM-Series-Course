@@ -1,5 +1,23 @@
 # 中小微企業 AI 應用工具包
 
+## 📑 目錄
+
+- [中小微企業 AI 應用工具包](#中小微企業-ai-應用工具包)
+  - [Part I：大型語言模型實作初階班 ( Prompt, Make Automation)](#part-i大型語言模型實作初階班--prompt-make-automation)
+    - [一、作品示例](#一作品示例)
+    - [二、課程資料](#二課程資料)
+  - [三、 其他補充](#三-其他補充)
+  - [Part II：大型語言模型實作中階班 (n8n)](#part-ii大型語言模型實作中階班-n8n)
+  - [Part III：大型語言模型實作高階班 (LangChain, RAG, Fine-tuning)](#part-iii大型語言模型實作高階班-langchain-rag-fine-tuning)
+    - [一、課程地圖](#一課程地圖)
+    - [二、學員作品示例](#二學員作品示例)
+    - [三、課程資料](#三課程資料)
+- [補充：](#補充)
+  - [四、 其他補充](#四-其他補充)
+
+---
+
+
 <aside>
 💡
 
@@ -32,13 +50,13 @@
     
     ![Untitled](assets/Untitled.png)
     
-    ![Untitled](assets/Untitled%201.png)
+    ![Untitled](assets/Untitled 1.png)
     
 - 學員報告作品-3
     
-    ![GUCart 代購機器人.png](assets/GUCart_%E4%BB%A3%E8%B3%BC%E6%A9%9F%E5%99%A8%E4%BA%BA.png)
+    ![GUCart 代購機器人.png](assets/GUCart_代購機器人.png)
     
-    ![第一組 個管機器人.png](assets/%E7%AC%AC%E4%B8%80%E7%B5%84_%E5%80%8B%E7%AE%A1%E6%A9%9F%E5%99%A8%E4%BA%BA.png)
+    ![第一組 個管機器人.png](assets/第一組_個管機器人.png)
     
 
 ### **二、課程資料**
@@ -1478,20 +1496,20 @@
             1. 下載網站：https://github.com/Const-me/Whisper/releases
             2. 下載 WhisperDesktop.zip 檔案，解壓縮後雙擊 WhisperDesktop.exe 
                 
-                ![Untitled](assets/Untitled%202.png)
+                ![Untitled](assets/Untitled 2.png)
                 
             3. 點”其他資訊” → 仍要執行
                 
-                ![Untitled](assets/Untitled%203.png)
+                ![Untitled](assets/Untitled 3.png)
                 
             4. Huggingface 網站下載模型，在速度與正確率權衡下選擇 [ggml-medium.bin](https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-medium.bin?download=true) 會是較佳選擇 (模型越大速度越慢，正確率越高，最大模型轉錄時間甚至會比錄音時間久)，電腦有 GPU 佳(速度相對較快速)。
             5. Model Path 點三個點選下載後的 ggml-medium.bin 路徑，Model Implementation 選GPU。
                 
-                ![Untitled](assets/Untitled%204.png)
+                ![Untitled](assets/Untitled 4.png)
                 
             6. Graphic adapter 選擇 GPU，如果沒有選預設，點選 OK
                 
-                ![Untitled](assets/Untitled%205.png)
+                ![Untitled](assets/Untitled 5.png)
                 
             7. Language：選 Chinese 轉錄為中文
                 
@@ -1499,7 +1517,7 @@
                 
                 Output Format：Text file(文字檔), Text with timestamps (帶時間戳的文字), SubRip subtitle 字幕 (標準的字幕格式時段+文字), WebVTT（Web Video Text Tracks）字幕是一種用於在網絡上顯示字幕的標準格式。
                 
-                ![Untitled](assets/Untitled%206.png)
+                ![Untitled](assets/Untitled 6.png)
                 
             8. 設定輸出路徑，設定好點 Transcribe 等待轉錄完成
             
@@ -1676,7 +1694,7 @@
         - 點連結進入 https://account.line.biz/login?redirectUri=https%3A%2F%2Fmanager.line.biz%2F
         - 使用自己的Line 帳號登入
             
-            ![Untitled](assets/Untitled%207.png)
+            ![Untitled](assets/Untitled 7.png)
             
         - 左側看到帳號點選建立
             
@@ -1684,19 +1702,19 @@
             
         - 填寫基本資料及業種
         
-        ![image.png](assets/image%201.png)
+        ![image.png](assets/image 1.png)
         
         - 完成後點稍後進行認證
             
-            ![image.png](assets/image%202.png)
+            ![image.png](assets/image 2.png)
             
         - 點完成 → 點選帳號進去
             
-            ![image.png](assets/image%203.png)
+            ![image.png](assets/image 3.png)
             
         - 點選右上角齒輪 → 左側設定 Messaging API → 建立提供者獲選一個提供者 → 隱私條款可填可不填寫 → 點確定 → 最後可以看到 Channel ID 及 Channel secret
             
-            ![image.png](assets/image%204.png)
+            ![image.png](assets/image 4.png)
             
             ![{F6973437-C0B9-4599-971B-F4498B463322}.png](assets/F6973437-C0B9-4599-971B-F4498B463322.png)
             
@@ -1707,12 +1725,12 @@
         
                先直接按儲存即可
         
-        ![image.png](assets/image%205.png)
+        ![image.png](assets/image 5.png)
         
         - 點 [https://developers.line.biz/en/](https://developers.line.biz/en/)  ，按右上方console
         - 在Provider頁面下點擊自己剛建立的官方帳號
             
-            ![Untitled](assets/Untitled%208.png)
+            ![Untitled](assets/Untitled 8.png)
             
         - 點選"Messaging API ，可看到此官方帳號的QRcode，用手機掃碼加入
         - 恭喜，第一步已完成，接下來我們要到 Make 平台產生 **webhook 連結，**再回到Line 開發者頁面串接，您可以收起此頁面進到前置準備 2。
@@ -1722,65 +1740,65 @@
         
         1. **先登入**[Make 網站](https://www.make.com/en) 
         
-        ![Untitled](assets/Untitled%209.png)
+        ![Untitled](assets/Untitled 9.png)
         
         1. **找到左側 Scenarios → Create a new scenario**
         
-        ![Untitled](assets/Untitled%2010.png)
+        ![Untitled](assets/Untitled 10.png)
         
         1. **Line module → Watch Events**
         
-        ![Untitled](assets/Untitled%2011.png)
+        ![Untitled](assets/Untitled 11.png)
         
         1. **點選Add 新增 webhook**
         
-        ![Untitled](assets/Untitled%2012.png)
+        ![Untitled](assets/Untitled 12.png)
         
         1. **取一個webhook 的名稱，並再按 Add 新增 connection**
         
-        ![Untitled](assets/Untitled%2013.png)
+        ![Untitled](assets/Untitled 13.png)
         
         1. **連結名稱隨意，可以照原本的不修改。填寫 Channel Access Token (需到Line的後台找到)** 
         
-        ![Untitled](assets/Untitled%2014.png)
+        ![Untitled](assets/Untitled 14.png)
         
         1. **Line Developers 開發者後台→ 點選 My AI Summarizer (你取的名稱)→ 點 Messaging API** 
         
-        ![Untitled](assets/Untitled%2015.png)
+        ![Untitled](assets/Untitled 15.png)
         
         1. **拉到頁面最下方 → 複製 Channel access token → 回到 Make 貼上**
         
-        ![Untitled](assets/Untitled%2016.png)
+        ![Untitled](assets/Untitled 16.png)
         
-        ![Untitled](assets/Untitled%2017.png)
+        ![Untitled](assets/Untitled 17.png)
         
         1. **回到 Make 貼上後按儲存兩次，此時會產生藍色的 webhook 連結，點選"copy address to clipboard後，回到 Line 開發者後台。**
         
-        ![Untitled](assets/Untitled%2018.png)
+        ![Untitled](assets/Untitled 18.png)
         
         **10 . 再回到 Line 開發者後台剛才複製 Channel access token 的頁面，往上滑找到 Webhook URL→貼上 Make 產生的 webhook 連結，並且開啟 Use webhook 功能 → Verify。**
         
         **(如果 Verify 出現 error 暫時不用理會，直接進到下個步驟)**
         
-        ![Untitled](assets/Untitled%2019.png)
+        ![Untitled](assets/Untitled 19.png)
         
         1. **點選Basic settings →** [LINE Developers](https://developers.line.biz/en/) **→ 回應設定 → 開啟聊天、Webhook等功能**
         
-        ![Untitled](assets/Untitled%2020.png)
+        ![Untitled](assets/Untitled 20.png)
         
-        ![Untitled](assets/Untitled%2021.png)
+        ![Untitled](assets/Untitled 21.png)
         
         1. **Make 與 Line 串接完成，回到Make做測試，點選 Run once**
         
-        ![Untitled](assets/Untitled%2022.png)
+        ![Untitled](assets/Untitled 22.png)
         
         1. **開始運作時的畫面，等待用戶輸入問題**
         
-        ![Untitled](assets/Untitled%2023.png)
+        ![Untitled](assets/Untitled 23.png)
         
         1. **到你的 Line Channel 輸入Hi，看到以下畫面代表您已串接成功**
         
-        ![Untitled](assets/Untitled%2024.png)
+        ![Untitled](assets/Untitled 24.png)
         
         也可看此篇Make串Line的[官方教學](https://www.make.com/en/help/app/line?_gl=1*m025y4*_ga*NjA3NTg4MTQuMTcwMDc4ODY0Ng..*_ga_MY0CJTCDSF*MTcwMTQ5NTg4MC4yLjEuMTcwMTQ5NTk1Mi41MC4wLjA)
         
@@ -1788,7 +1806,7 @@
         
         登入 [LINE Official Account Manager](https://manager.line.biz/) → 帳號一覽選擇帳號進去 → 右上角點齒輪的設定 → 下滑找到功能切換 → 開啟接受邀請加入群組或多人聊天室
         
-        ![image.png](assets/image%206.png)
+        ![image.png](assets/image 6.png)
         
     - 補充
         
@@ -1800,15 +1818,15 @@
     - Make 練習檔：https://drive.google.com/drive/folders/1WMF8rZxQW4jOFiLDcGdhxS6hzwUhOqmH?usp=sharing
     - **RPA專案實作A-  Line 與 GPT 模組串接**
         
-        ![Untitled](assets/Untitled%2025.png)
+        ![Untitled](assets/Untitled 25.png)
         
         1. **建立 Line Watch Events 模組 : 選擇剛剛建立好的 webhook 連結** 
             
-            ![Untitled](assets/Untitled%2026.png)
+            ![Untitled](assets/Untitled 26.png)
             
             2.  建立 **ChatGPT Creeate a completion 模組 → 點選Add 新增**
             
-            ![Untitled](assets/Untitled%2027.png)
+            ![Untitled](assets/Untitled 27.png)
             
             1. **輸入 API Key 和 Organization ID**
                 
@@ -1816,20 +1834,20 @@
                 
                 API KEY 請用自己組別的，[點此取得](https://drive.google.com/drive/u/3/folders/1yV34l2zRCZYhb1frq_vvp_sDCDGk0pWP)
                 
-                ![Untitled](assets/Untitled%2028.png)
+                ![Untitled](assets/Untitled 28.png)
                 
             
              
             
              4. **模型任選，選擇GPT-4o-mini**
             
-            ![image.png](assets/image%207.png)
+            ![image.png](assets/image 7.png)
             
              
             
             5. **新增 兩個 message**，分別是 System 和 User，在 System 的內容欄位輸入 prompt ，User 的內容欄位選取如圖中的參數
             
-            ![Untitled](assets/Untitled%2029.png)
+            ![Untitled](assets/Untitled 29.png)
             
             複製以下 Prompt 貼上，當然也可以用早上學到的知識，依任務自行設計prompt，中文也可以喔!
             
@@ -1841,35 +1859,35 @@
             
             新增connection，並再次輸入 channel access token
             
-            ![Untitled](assets/Untitled%2030.png)
+            ![Untitled](assets/Untitled 30.png)
             
             **B. 如果選擇的是 Send a Push Messsage 模組(個人推播) ，會需要填 User ID ，需要回到Line 開發者頁面，Basic setting 頁面下複製，再回到Make 貼上。此方法也會消耗每月訊息則數**
             
-            ![Untitled](assets/Untitled%2031.png)
+            ![Untitled](assets/Untitled 31.png)
             
             回到 Line developer，找到 **Basic setting** 頁面
             
-            ![Untitled](assets/Untitled%2032.png)
+            ![Untitled](assets/Untitled 32.png)
             
             在頁面最下方可看到您 channel的 User ID
             
-            ![Untitled](assets/Untitled%2033.png)
+            ![Untitled](assets/Untitled 33.png)
             
             **C. 如果選擇接的是 Send a Reply Messsage (回應模組)，在串接Line 時要找到 Reply Token 參數帶入，並且需搭配 Watch Events 模組，使用它的好處是不會消耗每月訊息則數!，但需要和 Watch events 模組成對搭配**
             
-            ![Untitled](assets/Untitled%2034.png)
+            ![Untitled](assets/Untitled 34.png)
             
             1. 選擇輸出格式，以及 GPT 的回覆結果
             
-            ![Untitled](assets/Untitled%2035.png)
+            ![Untitled](assets/Untitled 35.png)
             
     - **RPA專案實作B-  趣味動物圖片天氣推播 (Dall.E)**
         
-        ![Untitled](assets/Untitled%2036.png)
+        ![Untitled](assets/Untitled 36.png)
         
-        ![Untitled](assets/Untitled%2037.png)
+        ![Untitled](assets/Untitled 37.png)
         
-        ![Untitled](assets/Untitled%2038.png)
+        ![Untitled](assets/Untitled 38.png)
         
     - make 討論區 https://community.make.com/
 - 06 - ChatGPT + Make流程自動化實作
@@ -1880,7 +1898,7 @@
         
         [**註冊Dropbox帳號**](https://www.dropbox.com/home)
         
-        ![image.png](assets/image%208.png)
+        ![image.png](assets/image 8.png)
         
         `(png檔 -> Dropbox -> 模型辨認文字 -> 個人Line推播)`
         
@@ -1889,18 +1907,18 @@
         OpenAI - Analyze Images(vision)  (使用GPT4v模型做OCR)
         Line – Send a Push Message / Broadcast Message
         
-        ![image.png](assets/image%209.png)
+        ![image.png](assets/image 9.png)
         
     - **RPA專案實作D-  服藥提醒文字轉語音推播  (Text To Speech To Line)**
         
         **`(txt**檔 -> Dropbox -> Text to Speech模型生成語音 -> 上傳到Dropbox -> 個人Line推播)`
         
-        ![Untitled](assets/Untitled%2039.png)
+        ![Untitled](assets/Untitled 39.png)
         
 - 07 - ChatGPT + Make流程自動化實作
     - **RPA專案實作E -  語音轉文字  (Whisper) [**[Google 模板下載](https://drive.google.com/file/d/1ztGpSV_f8kJ4lhvD9MQLDh4w0DJ6TYqo/view)**][[Dropbox 模板下載](https://drive.google.com/file/d/1QlnUlbqkMXcDDpPnSW-Ts_SlAQjIU_Oo/view?usp=drive_link)] [**[測試音檔](https://drive.google.com/file/d/1rF5OLOwkX3o4TWPbbHDPe405nxHDNM9I/view?usp=sharing)**]**
         
-        ![Untitled](assets/Untitled%2040.png)
+        ![Untitled](assets/Untitled 40.png)
         
         **補充:  將Dropbox換成Google Drive (需要花一些時間做前置準備)**
         
@@ -1911,35 +1929,35 @@
             - 右上角建立專案 → 專案名稱取Make → 建立
             - 點選左側OAuth consent screen → User Type 選外部 → 建立
                 
-                ![Untitled](assets/Untitled%2041.png)
+                ![Untitled](assets/Untitled 41.png)
                 
             - 應用程式網域輸入: [https://www.make.com/en](https://www.make.com/en)  (Make主網址)
                 
-                ![Untitled](assets/Untitled%2042.png)
+                ![Untitled](assets/Untitled 42.png)
                 
             - 在授權網域處點選『新增網域』→ make.com (記得前面不用加https)
             開發人員聯絡資訊→填自己的email
             - 點選左上角三條線→API和服務→OAuth同意畫面
                 
-                ![Untitled](assets/Untitled%2043.png)
+                ![Untitled](assets/Untitled 43.png)
                 
-                ![Untitled](assets/Untitled%2044.png)
+                ![Untitled](assets/Untitled 44.png)
                 
             - 儲存並繼續2次後→返回資訊主頁→發布應用程式(看到發布狀態實際運作中)
                 
-                ![Untitled](assets/Untitled%2045.png)
+                ![Untitled](assets/Untitled 45.png)
                 
             - 發布應用程式
                 
-                ![Untitled](assets/Untitled%2046.png)
+                ![Untitled](assets/Untitled 46.png)
                 
             - 憑證→建立憑證→Oauth用戶端ID
                 
-                ![Untitled](assets/Untitled%2047.png)
+                ![Untitled](assets/Untitled 47.png)
                 
             - 應用程式類型→網頁應用程式，名稱打Make
                 
-                ![Untitled](assets/Untitled%2048.png)
+                ![Untitled](assets/Untitled 48.png)
                 
             - 已授權的重新導向URI →新增URI→複製以下網址貼上→建立
             [https://www.integromat.com/oauth/cb/google-restricted](https://www.integromat.com/oauth/cb/google-restricted)
@@ -1947,39 +1965,39 @@
             - 啟用Google Drive API 和 Gmail API
                 - 在上方欄位搜尋Google Drive Api→啟用
                     
-                    ![Untitled](assets/Untitled%2049.png)
+                    ![Untitled](assets/Untitled 49.png)
                     
-                    ![Untitled](assets/Untitled%2050.png)
+                    ![Untitled](assets/Untitled 50.png)
                     
                 - 搜尋Gmail Api→ 一樣啟用
                     
-                    ![Untitled](assets/Untitled%2051.png)
+                    ![Untitled](assets/Untitled 51.png)
                     
                 - 回到Oauth Consent screen ，此時有看到發布狀態實際運作中即完成
                     
-                    ![Untitled](assets/Untitled%2052.png)
+                    ![Untitled](assets/Untitled 52.png)
                     
         - **02 建立Make 自動化流程**
             - 在自己的Google 雲端硬碟新增一個名稱為whisper的資料夾
             - 進到Make，開新的scenario
             - 新增**Google Drive  (Watch Files in a Folder)→依照下圖設定**
                 
-                ![Untitled](assets/Untitled%2053.png)
+                ![Untitled](assets/Untitled 53.png)
                 
             - 再新增**Google Drive  (Download a File)**
                 
-                ![Untitled](assets/Untitled%2054.png)
+                ![Untitled](assets/Untitled 54.png)
                 
             - Add→ show advanced settings → Client ID、 Client Secret 貼上前置準備中的Oauth用戶端編號、用戶端密鑰
                 
-                ![Untitled](assets/Untitled%2055.png)
+                ![Untitled](assets/Untitled 55.png)
                 
         - [**YouTube 到 Mp4 線上轉換器**](https://yt1s.ltd/zh-tw182hzb/youtube-to-mp4)
             
             
     - **RPA專案實作F -  資料庫內容寫入 (Google Sheet)**
         
-        ![Untitled](assets/Untitled%2056.png)
+        ![Untitled](assets/Untitled 56.png)
         
     - RAG 客製化聊天機器人 [[**模板下載](https://drive.google.com/file/d/1OYjUKAAY-FdH3IufTSYvvK1zVfN9KkEw/view?usp=sharing)]**
         - 如何取得 OpenAI API key?
@@ -2031,19 +2049,19 @@
         3. File search → 上傳檔案
         4. make 中的 OpenAI 選 Message As Assistant
             
-            ![image.png](assets/image%2010.png)
+            ![image.png](assets/image 10.png)
             
     - RPA 補充圖片分析 [[**模板下載](https://drive.google.com/file/d/1qryBUzdmge-i6W2drViPwLV3esndG1R0/view?usp=sharing)]**  [[模板下載_回復上傳圖片](https://drive.google.com/file/d/1UNwA0SjDo2e_2wmWmhkDtBvBJM5UaMDO/view?usp=sharing)**]**
         
-        ![image.png](assets/image%2011.png)
+        ![image.png](assets/image 11.png)
         
         1. 設定篩選器，有圖片走上面這條流程
             
-            ![image.png](assets/image%2012.png)
+            ![image.png](assets/image 12.png)
             
         2. 設定篩選器，有文字走下面這條流程
             
-            ![image.png](assets/image%2013.png)
+            ![image.png](assets/image 13.png)
             
         3. 下載圖片→ 選 Event Message.Message ID
             
@@ -2056,7 +2074,7 @@
             
             temperature=0
             
-            ![image.png](assets/image%2014.png)
+            ![image.png](assets/image 14.png)
             
         5. 選擇 Reply Token
             
@@ -2074,7 +2092,7 @@
         - Notion 資料庫建置
             - 左邊側欄 + Add a page → Table → New Database
                 
-                ![Untitled](assets/Untitled%2057.png)
+                ![Untitled](assets/Untitled 57.png)
                 
             - 左上方更改資料庫名稱為 test db (名稱可自取)
             - 刪除Tag欄位→新增 created time
@@ -2086,57 +2104,57 @@
             
             - 回到Notion Database ，可看到要儲存的網頁文字資訊已經進來，我們將再透過Make把它們傳送給ChatGPT整理
                 
-                ![Untitled](assets/Untitled%2058.png)
+                ![Untitled](assets/Untitled 58.png)
                 
-                ![Untitled](assets/Untitled%2059.png)
+                ![Untitled](assets/Untitled 59.png)
                 
         
         `(網頁資料 → Notion database → chatGPT completion 總結 → Line推播)`
         
          `應用情境:  知識管理、廣告推播、客戶回應`
         
-        ![Untitled](assets/Untitled%2060.png)
+        ![Untitled](assets/Untitled 60.png)
         
         - **建立Make 自動化流程**
             - **create a new scenario**
             - **Notion- Watch Database Items**
             
-            ![Untitled](assets/Untitled%2061.png)
+            ![Untitled](assets/Untitled 61.png)
             
             - **Tools- Text aggregator**
             
                   參數選擇 **properties_value.News[].plain_text    (News 是 Notion資料庫自命名的欄位名稱**
             
-            ![Untitled](assets/Untitled%2062.png)
+            ![Untitled](assets/Untitled 62.png)
             
             - **Open AI- Create a completion
             1. 取一個連接名稱，輸入自己組別的 API Key 和 Organization ID**
                 
-                ![Untitled](assets/Untitled%2063.png)
+                ![Untitled](assets/Untitled 63.png)
                 
             
                  
             
                  **2. 儲存後在下個頁面選擇** Create a Chat Completion → 選擇模型 → 設定system prompt ，以下是重點歸納整理的prompt範例，依自己的任務需求自行修改 system prompt : You are a summary agent, always summarize the text in "zh-tw" language, with the most unique and helpful points, into a numbered list of key points and takeaways
             
-            ![Untitled](assets/Untitled%2064.png)
+            ![Untitled](assets/Untitled 64.png)
             
                  
             
             3.**往下滑新增 Item2，Role 選擇user，開啟Map，Message content把text的模塊拖曳進來**
             
-            ![Untitled](assets/Untitled%2065.png)
+            ![Untitled](assets/Untitled 65.png)
             
             - **Line- Send a Push Message (發送給自己
             到Line開發者平台→點自己官方帳號頁面→ Basic settings下方找到自己的user ID→複製到Make平台貼上user ID**
                 
-                ![Untitled](assets/Untitled%2066.png)
+                ![Untitled](assets/Untitled 66.png)
                 
-                ![Untitled](assets/Untitled%2067.png)
+                ![Untitled](assets/Untitled 67.png)
                 
             - 如果希望群發訊息，讓推播訊息備有家頻道的好友看見，則需選擇 **Send a Broadcast Message** 模塊
                 
-                ![Untitled](assets/Untitled%2068.png)
+                ![Untitled](assets/Untitled 68.png)
                 
 - 08 - 檢索增強生成實作
     - **地端LLM工具- LM Studio桌面工具、模型下載**
@@ -2144,7 +2162,7 @@
         **1. 下載網址:** [LM Studio - Discover, download, and run local LLMs](https://lmstudio.ai/download)
             **(Mac電腦版本需M1/M2/M3以上)**
         
-        ![圖片1.png](assets/%E5%9C%96%E7%89%871.png)
+        ![圖片1.png](assets/圖片1.png)
         
         **2.  搜尋並下載開源模型**
          
@@ -2163,23 +2181,23 @@
         
         5.點選下載符號查看下載進度
         
-        ![image.png](assets/image%2015.png)
+        ![image.png](assets/image 15.png)
         
             第3.步驟有出現紅色圖示，表示模型在電腦上跑不動
         
-        ![image.png](assets/image%2016.png)
+        ![image.png](assets/image 16.png)
         
           5.點選左側聊天圖示，上方選擇模型
         
-        ![image.png](assets/image%2017.png)
+        ![image.png](assets/image 17.png)
         
         6.試著與模型聊天，或請它對一段文章做摘要
         
-        ![image.png](assets/image%2018.png)
+        ![image.png](assets/image 18.png)
         
         7.可看見模型的回應
         
-        ![image.png](assets/image%2019.png)
+        ![image.png](assets/image 19.png)
         
     - **LM Studio 模型實測**
         
@@ -2188,47 +2206,47 @@
     - **AnythingLLM 工具**
         1. 下載 [Download AnythingLLM for Desktop (useanything.com)](https://useanything.com/download) 
         
-        ![image.png](assets/image%2020.png)
+        ![image.png](assets/image 20.png)
         
         1. 前置作業(使用LM studio當作LLM Server)
             1. 開啟 LM studio  ****
             2. 點選左側終端機圖示，將Server Status 開啟
             
-            ![image.png](assets/image%2021.png)
+            ![image.png](assets/image 21.png)
             
         2. AnythingLLM 設定與功能教學
         (初次安裝相關設定都使用預設即可，問卷調查可以跳過，最後建立工作區可隨意命名)
         安裝完成後會有一個工作區(剛才建立的)
             
-            ![image.png](assets/image%2022.png)
+            ![image.png](assets/image 22.png)
             
              a. 點選左下角板手進入設定
             
-            ![image.png](assets/image%2023.png)
+            ![image.png](assets/image 23.png)
             
              b. 左邊點擊LLM，選擇LM Studio 作為模型提供者，選擇模型，最後點擊Save
             
-            ![image.png](assets/image%2024.png)
+            ![image.png](assets/image 24.png)
             
              c.點擊左下角返回，點選齒輪符號進入工作區設定
             
-            ![image.png](assets/image%2025.png)
+            ![image.png](assets/image 25.png)
             
              d. 點選對話設定後，切換模型，最後更新設定
             
-            ![image.png](assets/image%2026.png)
+            ![image.png](assets/image 26.png)
             
              e. 點上傳符號→上傳檔案或是下方給網址連結進行爬蟲
             
-            ![Untitled](assets/Untitled%2069.png)
+            ![Untitled](assets/Untitled 69.png)
             
              f. 下方欄位輸入網址後按 Fetch website 進行爬蟲或是上傳PDF, DOC, CSV, EXCEL, 聲音檔案等。上傳後，在上方勾選檔案後點 Move 1 file to workspace → 右邊點 Save and Embed進行轉換。
             
-            ![Untitled](assets/Untitled%2070.png)
+            ![Untitled](assets/Untitled 70.png)
             
             g. 針對勞基法進行詢問
             
-            ![Untitled](assets/Untitled%2071.png)
+            ![Untitled](assets/Untitled 71.png)
             
             h. 補充 Breeze 模型 system prompt 
             
@@ -2271,7 +2289,7 @@
         
         [英偉達版ChatGPT來了，PC端部署，很GPU (futunn.com)](https://news.futunn.com/hk/post/37964682?src=2&ns_stock_id=202597&report_type=stock&futusource=news_stock_stockpagenews&report_id=40168019&us_cid=231559105&skintype=3&main_broker=WwogIDEwMDgKXQ%3D%3D&level=4&global_content=%7B%22promote_content%22%3A%22nn%3Apost%3A37964682%22%2C%22invite%22%3A231559105%7D&data_ticket=1707964528745586&fbclid=IwAR052B6XS8MIltCaEfLRHoz5Xgk3fjgDoSjs76POJxFEBjJpSj-6x6yio44)
         
-        ![Untitled](assets/Untitled%2072.png)
+        ![Untitled](assets/Untitled 72.png)
         
         **NVIDIA Chat with RTX** 是一款允許用戶自訂基於 GPT 大型語言模型 (LLM) 的 AI 聊天機器人應用程式。它支持將個人的文件、筆記、影片等內容連接至聊天機器人，通過使用 RAG、TensorRT-LLM 和 RTX 加速技術，以快速提供相關答案。此應用程式可免費下載，但需運行於配置有 NVIDIA GeForce™ RTX 30 或 40 系列、或 NVIDIA RTX™ Ampere 或 Ada 世代 GPU（至少 8GB VRAM）、16GB 或以上 RAM 的 Windows RTX 電腦或工作站上，且操作系統需為 Windows 11，驅動程式版本需為 535.11 或更高。支援的檔案格式包括文字、PDF、DOC/DOCX 和 XML，並能夠載入 YouTube 播放清單的文字轉錄。開發者可透過從 GitHub 獲取的基於 TensorRT-LLM RAG 的開發者參考專案，來開發和部署自己的應用程式，並在 RTX 上加速。
         
@@ -2279,7 +2297,7 @@
         
         [https://gpt4all.io/index.html](https://gpt4all.io/index.html)
         
-        ![Untitled](assets/Untitled%2073.png)
+        ![Untitled](assets/Untitled 73.png)
         
         GPT4All 是一個生態系統，用於訓練和部署在消費級 CPU 上**本地**運行的**強大**且**客製化的**大型語言模型。
         
@@ -2293,7 +2311,7 @@
         - [現在就加入 Notion 吧！](https://www.notion.so/549c3e62894a49629f774a264b9db6a9?pvs=21)
         - 左邊側欄 + Add a page → Table → New Database
             
-            ![Untitled](assets/Untitled%2057.png)
+            ![Untitled](assets/Untitled 57.png)
             
         - 左上方更改資料庫名稱為 test db (名稱可自取)
         - 刪除Tag欄位→新增 created time
@@ -2307,11 +2325,11 @@
         
         - 回到Notion Database ，可看到要儲存的網頁文字資訊已經進來，我們將再透過Make把它們傳送給ChatGPT整理
         
-        ![Untitled](assets/Untitled%2058.png)
+        ![Untitled](assets/Untitled 58.png)
         
          
         
-        ![Untitled](assets/Untitled%2059.png)
+        ![Untitled](assets/Untitled 59.png)
         
     - **RPA 補充專案 1-  Notion資料庫知識整理推播     [**[模板下載](https://drive.google.com/file/d/1e9kMPCIRTlmnx4nnqh7otgJGV62X2nrp/view?usp=drive_link)**]  [[教學影片](https://drive.google.com/file/d/1_HOxJYBCFpNx8-4ElBSOVcOb5OR3nUQo/view?usp=drive_link)]**
         
@@ -2319,25 +2337,25 @@
         
          `應用情境:  知識管理、廣告推播、客戶回應`
         
-        ![Untitled](assets/Untitled%2060.png)
+        ![Untitled](assets/Untitled 60.png)
         
         - **建立Make 自動化流程**
             - **create a new scenario**
             - **Notion- Watch Database Items**
             
-            ![Untitled](assets/Untitled%2061.png)
+            ![Untitled](assets/Untitled 61.png)
             
             - **Tools- Text aggregator**
             
                   參數選擇 **properties_value.News[].plain_text    (News 是 Notion資料庫自命名的欄位名稱**
             
-            ![Untitled](assets/Untitled%2062.png)
+            ![Untitled](assets/Untitled 62.png)
             
             - **Open AI- Create a completion
             1. 取一個連接名稱，輸入自己組別的 API Key 和 Organization ID**
                 P.S. 如果想用自己的，可到[這裡](https://platform.openai.com/account/org-settings)查詢openAI的API key和 Organuzation ID
                 
-                ![Untitled](assets/Untitled%2063.png)
+                ![Untitled](assets/Untitled 63.png)
                 
             
                  
@@ -2352,24 +2370,24 @@
             
                     most unique and helpful points, into a numbered list of key points and takeaways
             
-            ![Untitled](assets/Untitled%2064.png)
+            ![Untitled](assets/Untitled 64.png)
             
                  
             
             3.**往下滑新增Item2，Role 選擇user，開啟Map，Message content把text的模塊拖曳進來**
             
-            ![Untitled](assets/Untitled%2065.png)
+            ![Untitled](assets/Untitled 65.png)
             
             - **Line- Send a Push Message (發送給自己)
             到Line開發者平台→點自己官方帳號頁面→ Basic settings下方找到自己的user ID→複製到Make平台貼上user ID**
                 
-                ![Untitled](assets/Untitled%2066.png)
+                ![Untitled](assets/Untitled 66.png)
                 
-                ![Untitled](assets/Untitled%2067.png)
+                ![Untitled](assets/Untitled 67.png)
                 
             - 如果希望群發訊息，讓推播訊息備有加頻道的好友看見，則需選擇 **Send a Broadcast Message** 模塊
                 
-                ![Untitled](assets/Untitled%2068.png)
+                ![Untitled](assets/Untitled 68.png)
                 
     - RPA 補充專案 2  (本範例步驟較繁雜，課程中不帶操作，請有興趣實作者自行參閱)
         - **RPA專案實作F-**  **Googlr Drive** **影片語音資料重點整理推播   [**[模板下載](https://drive.google.com/file/d/1vpWKVgsaHKg_ADvE3MhEbNNCWZVjLW6a/view?usp=drive_link)**]  [**[測試語音](https://drive.google.com/file/d/1tskCBthmLnvT-SdYWDc8fbwY9GIaxLEg/view?usp=drive_link)**] [[測試影片](https://drive.google.com/file/d/1Z2AWv2vD4MeGO3CkbTqg2RVH8mGM_Eu5/view?usp=drive_link)]**
@@ -2377,7 +2395,7 @@
             `( Youtube影片-> Google Drive -> chatGPT whisper 轉逐字稿-> chatGPT整理->Line推播)`
             (Google Drive語音檔轉成文字，ChatGPT總結發到LINE推播)
             
-            ![Untitled](assets/Untitled%2074.png)
+            ![Untitled](assets/Untitled 74.png)
             
             - **01** **前置準備-將Make 串接 Google API**
                 
@@ -2395,32 +2413,32 @@
                 - 啟用Google Drive API 和 Gmail API
                     - 在上方欄位搜尋Google Drive Api→啟用
                         
-                        ![Untitled](assets/Untitled%2049.png)
+                        ![Untitled](assets/Untitled 49.png)
                         
-                        ![Untitled](assets/Untitled%2050.png)
+                        ![Untitled](assets/Untitled 50.png)
                         
                     - 搜尋Gmail Api→ 一樣啟用
                         
-                        ![Untitled](assets/Untitled%2051.png)
+                        ![Untitled](assets/Untitled 51.png)
                         
                     - 回到Oauth Consent screen ，此時有看到發布狀態實際運作中即完成
                         
-                        ![Untitled](assets/Untitled%2052.png)
+                        ![Untitled](assets/Untitled 52.png)
                         
             - **02 建立Make 自動化流程**
                 - 在自己的Google 雲端硬碟新增一個名稱為whisper的資料夾
                 - 進到Make，開新的scenario
                 - 新增**Google Drive  (Watch Files in a Folder)→依照下圖設定**
                     
-                    ![Untitled](assets/Untitled%2053.png)
+                    ![Untitled](assets/Untitled 53.png)
                     
                 - 再新增**Google Drive  (Download a File)**
                     
-                    ![Untitled](assets/Untitled%2054.png)
+                    ![Untitled](assets/Untitled 54.png)
                     
                 - Add→ show advanced settings → Client ID、 Client Secret 貼上前置準備中的Oauth用戶端編號、用戶端密鑰
                     
-                    ![Untitled](assets/Untitled%2055.png)
+                    ![Untitled](assets/Untitled 55.png)
                     
             - [**YouTube 到 Mp4 線上轉換器**](https://yt1s.ltd/zh-tw182hzb/youtube-to-mp4)
                 
@@ -2430,9 +2448,9 @@
         
         `(Gmail信件 → chatGPT 整理 → Line推播 & Notion紀錄)`
         
-        ![Untitled](assets/Untitled%2075.png)
+        ![Untitled](assets/Untitled 75.png)
         
-        ![Untitled](assets/Untitled%2076.png)
+        ![Untitled](assets/Untitled 76.png)
         
 - **雲端RAG運用 [Seachat](https://chat.seasalt.ai/zh-tw)  建立聊天機器人**
     
@@ -2440,7 +2458,7 @@
     
     `缺點: 模型目前只能接ChatGPT3.5 , 每人每個月限開兩個AI助理，總回應100則訊息` 
     
-    ![Untitled](assets/Untitled%2077.png)
+    ![Untitled](assets/Untitled 77.png)
     
     - 建立聊天機器人並做RAG (課堂實作)
         
@@ -2450,7 +2468,7 @@
         
         到自己的[Line開發者頁面](https://developers.line.biz/zh-hant/)找到以下資訊貼上
         
-        ![Untitled](assets/Untitled%2078.png)
+        ![Untitled](assets/Untitled 78.png)
         
     - **在 LINE 官方帳號中設定AI聊天助理**
         
@@ -2458,21 +2476,21 @@
         
         登錄開發者控制台，創建或選擇消息API提供者、消息API通道，然後**選擇消息API**
         
-        ![Untitled](assets/Untitled%2079.png)
+        ![Untitled](assets/Untitled 79.png)
         
         **步驟 2 Webhook 設置**
         
         將Webhook URL設定為URL： **https://chat.seasalt.ai/webhook/v1/line/6e4eca5dfba4411e99788db9bd328e4d**
         
-        ![Untitled](assets/Untitled%2080.png)
+        ![Untitled](assets/Untitled 80.png)
         
         **步驟 3 Line公眾號功能**
         
         配置**允許AI聊天助理加入群聊、自動回覆消息如下**和**設置問候消息**
         
-        ![Untitled](assets/Untitled%2081.png)
+        ![Untitled](assets/Untitled 81.png)
         
-        ![Untitled](assets/Untitled%2082.png)
+        ![Untitled](assets/Untitled 82.png)
         
         注意:  如果Line帳號無法對話，先封鎖官方帳號再解除即可
         
@@ -2504,7 +2522,7 @@
 
 - 課程地圖
     
-    ![image.png](assets/image%2027.png)
+    ![image.png](assets/image 27.png)
     
 
 [課前安裝軟體](assets/%E8%AA%B2%E5%89%8D%E5%AE%89%E8%A3%9D%E8%BB%9F%E9%AB%94%2028154713b8fe814f952ce35af582f24b.md)
@@ -2520,7 +2538,7 @@
         - TaskRunner 使用 API 提供人工智慧服務，在運行工作任務時，分析資料並透過機器學習功能增強應用程式。
         - 簡化工作流程並減少編寫程序，僅在必要時使用 JavaScript 編寫自訂程序，以提高創建複雜工作流程的速度。
         
-        ![Untitled](assets/Untitled%2083.png)
+        ![Untitled](assets/Untitled 83.png)
         
 - n8n 簡介
     - n8n 是一個開源的工作流自動化平台，於 2019 年由 Jan Oberhauser 在柏林創建。它允許用戶建立業務流程，並集成和互動超過 1000 個應用程序 https://n8n.io/integrations/。
@@ -2540,13 +2558,13 @@
             - n8n 的 Gmail 節點類型中封裝了一個觸發節點，叫做 On Message Received。
             節點實際的含義是系統會每分鐘（這個週期可以配置）有沒有收到新的郵件，如果收到，就代表這個節點被觸發了，它就被執行了，自然而然的它的後續節點，以及整個工作流都會開始執行程式。
                 
-                ![Untitled](assets/Untitled%2084.png)
+                ![Untitled](assets/Untitled 84.png)
                 
         - **執行節點：**n8n 中 Gmail 節點類型中封裝了 25 個執行節點。
             - 包括給郵件標籤、刪除郵件、讀取郵件內容、改變郵件的讀取狀態、發送郵件等等所有你能想到的能在介面上進行的操作，n8n 幾乎都可以實現。
             - 收到一封新郵件的通知，就好比在手機上收到了App 的 Push，但是這個時候郵件的具體內容是什麼，並不知道，因為人收到了通知，觸發了後續的動作，所以收到新郵件的通知本身這件事是一個觸發節點。但是讀取郵件內容，是在收到通知之後的行為，這就是一個執行節點，至於讀取之後是否要回復，或者是選擇把郵件直接扔到垃圾箱，這些都是執行節點。大部分情況下，執行節點的數量都是遠多於觸發節點的。
                 
-                ![Untitled](assets/Untitled%2085.png)
+                ![Untitled](assets/Untitled 85.png)
                 
     - **n8n節點功能表的分類**
         
@@ -2560,7 +2578,7 @@
         1. https://nodejs.org/en/ 下載 https://nodejs.org/dist/v20.18.0/node-v20.18.0-x64.msi 安裝檔進行安裝
         2. Windows 按開始或放大鏡輸入 cmd 打開命令提示字元後輸入 npx n8n 安裝n8n / Mac 在終端機輸入 npx n8n 安裝n8n
             
-            ![image.png](assets/image%2028.png)
+            ![image.png](assets/image 28.png)
             
         3. 更新 n8n 軟體 npm update -g n8n
     - Docker ([**250 employees** OR more than **$10 million** in annual revenue requires a paid subscription](https://www.docker.com/pricing/))
@@ -2594,19 +2612,19 @@
 - 開啟 n8n 的二因素驗證
     - 在 n8n 裡開啟二階段驗證。 由於 n8n 支援安裝第三方 npm 節點，因此駭客如果攻破了你的 n8n 不止能夠隨意刪改你的 n8n Workflow，還有可能直接攻破你的伺服器，控制一切。
         
-        ![Untitled](assets/Untitled%2086.png)
+        ![Untitled](assets/Untitled 86.png)
         
     - 使用 Google Authenticator 掃描 QR code 後輸入6位數字進行驗證
         
-        ![Untitled](assets/Untitled%2087.png)
+        ![Untitled](assets/Untitled 87.png)
         
     - 存下恢復碼
         
-        ![Untitled](assets/Untitled%2088.png)
+        ![Untitled](assets/Untitled 88.png)
         
 - 建置工作流程
     
-    ![Untitled](assets/Untitled%2089.png)
+    ![Untitled](assets/Untitled 89.png)
     
     - Action in an app：外界服務的 API 封裝的節點，比如Google Sheets; 【外部節點】
         - 羅列了市面上眾多的開放服務的節點
@@ -2653,11 +2671,11 @@
     - 在 n8n 中，LangChain 是一個包含子節點的 AI 節點。 在你更換不同的 AI 服務時，可以不用重新設置所有的節點設置，大幅提高我們調試 Workflow 的效率。
     - 在 n8n 中，Advaced AI 是一個專門的 node 類別，其下有多種不同的 AI 類型。 在這裡，我們會詳細介紹兩個最常用的 AI 節點，讓你掌握 AI 在 n8n 中的接入邏輯。
         
-        ![Untitled](assets/Untitled%2090.png)
+        ![Untitled](assets/Untitled 90.png)
         
         - 大部分的 AI 節點都在介紹里寫明瞭自己的用處是什麼，你還可以點擊 AI Templates 從官方社區下載別人已經組合好的 Chain。
             
-            ![Untitled](assets/Untitled%2091.png)
+            ![Untitled](assets/Untitled 91.png)
             
     - **Basic LLM Chain：**節點是用於連接大語言模型的最簡單節點。 它不適合用來做 Agent，也不太適合用來做對話。 特別適合那種做一次性的文本處理與判斷。
         - 比如：文本總結、文本摘要、語法糾正、文本分類等等。
@@ -2816,7 +2834,7 @@
     - 1-2 簡易AI_summarizer_agent 流程
         1. 選擇Trigger manually(點擊 Test Workflow 開始)
         
-        ![image.png](assets/image%2029.png)
+        ![image.png](assets/image 29.png)
         
         1. Read/Write Files from Disk(從硬碟讀取檔案)
             1. Operation：Read Files from Disk
@@ -2832,23 +2850,23 @@
                     
                     [test_data.csv](assets/test_data.csv)
                     
-                    ![image.png](assets/image%2030.png)
+                    ![image.png](assets/image 30.png)
                     
                 2. Mac：
                 
                 需先開起權限：
                 
-                ![截圖 2025-03-04 下午1.48.44.png](assets/%E6%88%AA%E5%9C%96_2025-03-04_%E4%B8%8B%E5%8D%881.48.44.png)
+                ![截圖 2025-03-04 下午1.48.44.png](assets/截圖_2025-03-04_下午1.48.44.png)
                 
-                ![截圖 2025-03-04 下午1.48.56.png](assets/%E6%88%AA%E5%9C%96_2025-03-04_%E4%B8%8B%E5%8D%881.48.56.png)
+                ![截圖 2025-03-04 下午1.48.56.png](assets/截圖_2025-03-04_下午1.48.56.png)
                 
-                ![截圖 2025-03-04 下午1.48.04.png](assets/%E6%88%AA%E5%9C%96_2025-03-04_%E4%B8%8B%E5%8D%881.48.04.png)
+                ![截圖 2025-03-04 下午1.48.04.png](assets/截圖_2025-03-04_下午1.48.04.png)
                 
         2. Extract from File(將檔案轉換為json格式)
             1. Operation：Extract from CSV file
             2. Input Binary Field：data(前一步驟輸入的資料名稱)
             
-            ![image.png](assets/image%2031.png)
+            ![image.png](assets/image 31.png)
             
         3. Data transformation(整理資料)
             1. 選擇Aggregate(將多筆資料合併)
@@ -2856,7 +2874,7 @@
             3. Put Output in Field：data
             4. Include：All Fields
             
-            ![image.png](assets/image%2032.png)
+            ![image.png](assets/image 32.png)
             
         4. AI Agent(將資料提供給 AI Agent 作總結)
             1. Agent：Tools Agent
@@ -2872,7 +2890,7 @@
             
             輸入[You are a summary agent, always summarize the text in "zh-tw" language, with the most unique and helpful points, into a numbered list of key points and takeaways. Must reply in"traditional chinese”]
             
-            ![image.png](assets/image%2033.png)
+            ![image.png](assets/image 33.png)
             
         5. 選擇要使用地端還是雲端
             1. 地端：Ollama Chat Model(選擇要使用的模型)
@@ -2880,28 +2898,28 @@
                 
                 (Docker版本)
                 
-                ![image.png](assets/image%2034.png)
+                ![image.png](assets/image 34.png)
                 
                 (node.js版本)
                 
-                ![image.png](assets/image%2035.png)
+                ![image.png](assets/image 35.png)
                 
                 1. Model：選擇在Ollama上安裝並且想在這次的練習中運行的模型(此處以llama3.2:latest為例)
                 
-                ![image.png](assets/image%2036.png)
+                ![image.png](assets/image 36.png)
                 
             2. 雲端：OpenAI Chat Model(選擇要使用的模型)
                 1. Credential to connect with：點選Create new credential並輸入API Key(會提供給每組API Key)，再按Save儲存
                 2. Model：選擇想在這次練習中運行的模型(此處以gpt-4o-mini為例)
             
-            ![image.png](assets/image%2037.png)
+            ![image.png](assets/image 37.png)
             
         6. Convert to File(將資料轉換為Binary格式)
             1. Operation：Convert to Text File
             2. Text Input Fields：output(前一步驟AI Agent所產生的資料名稱)
             3. Put Output File in Field：data(輸出時的資料名稱)
             
-            ![image.png](assets/image%2038.png)
+            ![image.png](assets/image 38.png)
             
         7. Read/Write Files from Disk(輸出檔案)
             1. Operation：Write File Disk
@@ -2915,24 +2933,24 @@
                     
                     </aside>
                     
-                    ![image.png](assets/image%2039.png)
+                    ![image.png](assets/image 39.png)
                     
                 2. Mac：
                 
                 需先開起權限：
                 
-                ![截圖 2025-03-04 下午1.48.44.png](assets/%E6%88%AA%E5%9C%96_2025-03-04_%E4%B8%8B%E5%8D%881.48.44.png)
+                ![截圖 2025-03-04 下午1.48.44.png](assets/截圖_2025-03-04_下午1.48.44.png)
                 
-                ![截圖 2025-03-04 下午1.48.56.png](assets/%E6%88%AA%E5%9C%96_2025-03-04_%E4%B8%8B%E5%8D%881.48.56.png)
+                ![截圖 2025-03-04 下午1.48.56.png](assets/截圖_2025-03-04_下午1.48.56.png)
                 
-                ![截圖 2025-03-04 下午3.16.43.png](assets/%E6%88%AA%E5%9C%96_2025-03-04_%E4%B8%8B%E5%8D%883.16.43.png)
+                ![截圖 2025-03-04 下午3.16.43.png](assets/截圖_2025-03-04_下午3.16.43.png)
                 
             3.  Input Binary Field：data(輸入前一步的資料名稱)
                 
                 
         8. 結果：
         
-        ![image.png](assets/image%2040.png)
+        ![image.png](assets/image 40.png)
         
     - 1-2 進階AI_summarizer_agent 流程
         
@@ -2957,11 +2975,11 @@
                 
                 需先開起權限：
                 
-                ![截圖 2025-03-04 下午1.48.44.png](assets/%E6%88%AA%E5%9C%96_2025-03-04_%E4%B8%8B%E5%8D%881.48.44.png)
+                ![截圖 2025-03-04 下午1.48.44.png](assets/截圖_2025-03-04_下午1.48.44.png)
                 
-                ![截圖 2025-03-04 下午1.48.56.png](assets/%E6%88%AA%E5%9C%96_2025-03-04_%E4%B8%8B%E5%8D%881.48.56.png)
+                ![截圖 2025-03-04 下午1.48.56.png](assets/截圖_2025-03-04_下午1.48.56.png)
                 
-                ![image.png](assets/image%2041.png)
+                ![image.png](assets/image 41.png)
                 
             4. Watch for：下拉選擇File Added
         2. Edit Fieds(Set)修正路徑格式
@@ -2975,13 +2993,13 @@
                 {{ $json.path.replaceAll("\\","/") }}
                 ```
                 
-                ![image.png](assets/image%2042.png)
+                ![image.png](assets/image 42.png)
                 
         3. Read/Write Files from Disk(從硬碟讀取檔案)
             1. Operation：Read Files from Disk
             2. File(s) Selector：將前一個節點的path拖曳(欄位右上角必須改選**Expression**)
             
-            ![image.png](assets/image%2043.png)
+            ![image.png](assets/image 43.png)
             
         4. Switch(由附檔名決定如何讀取)
             1. Mode：Rules
@@ -2989,7 +3007,7 @@
                 1. value1：左邊視窗input切換至schema，找到fileExtension拖曳至value1
                 2. value2：填入可能讀取到的檔案格式(pdf、csv、xlsx、txt)
                 
-                ![image.png](assets/image%2044.png)
+                ![image.png](assets/image 44.png)
                 
         5. Extract from text file(將檔案從轉換為json格式)
             1. Operation：(分別建四個節點)
@@ -2998,14 +3016,14 @@
                 3. Extract from pdf file
                 4. Extract from text file
                 
-                ![image.png](assets/image%2045.png)
+                ![image.png](assets/image 45.png)
                 
             2. Input Binary Field：data(前一步驟輸入的資料名稱)
             
             > **下圖為csv檔為例(分別還有xlsx、pdf 以及text)**
             > 
             
-            ![image.png](assets/image%2046.png)
+            ![image.png](assets/image 46.png)
             
         6. 多種文件處理
             1. xlsx、csv
@@ -3014,9 +3032,9 @@
                 3. Put Output in Field：data
                 4. Include：All Fields
                 
-                ![image.png](assets/image%2047.png)
+                ![image.png](assets/image 47.png)
                 
-                ![image.png](assets/image%2048.png)
+                ![image.png](assets/image 48.png)
                 
             2. pdf、txt(直接連接至下一步驟的AI Agent)
         7. AI Agent(將資料提供給 AI Agent 作總結)
@@ -3033,7 +3051,7 @@
             
             輸入[You are a summary agent, always summarize the text in "zh-tw" language, with the most unique and helpful points, into a numbered list of key points and takeaways. Must reply in"traditional chinese”]
             
-            ![image.png](assets/image%2049.png)
+            ![image.png](assets/image 49.png)
             
         8. 選擇要使用地端還是雲端
             1. 地端：Ollama Chat Model(選擇要使用的模型)
@@ -3041,28 +3059,28 @@
                 
                 (Docker版本)
                 
-                ![image.png](assets/image%2034.png)
+                ![image.png](assets/image 34.png)
                 
                 (node.js版本)
                 
-                ![image.png](assets/image%2035.png)
+                ![image.png](assets/image 35.png)
                 
                 1. Model：選擇在Ollama上安裝並且想在這次的練習中運行的模型(此處以llama3.2:latest為例)
                 
-                ![image.png](assets/image%2036.png)
+                ![image.png](assets/image 36.png)
                 
             2. 雲端：OpenAI Chat Model(選擇要使用的模型)
                 1. Credential to connect with：點選Create new credential並輸入API Key(會提供給每組API Key)，再按Save儲存
                 2. Model：選擇想在這次練習中運行的模型(此處以gpt-4o-mini為例)
             
-            ![image.png](assets/image%2037.png)
+            ![image.png](assets/image 37.png)
             
         9. Convert to File(將資料轉換為Binary格式)
             1. Operation：Convert to Text File
             2. Text Input Fields：output(前一步驟AI Agent所產生的資料名稱)
             3. Put Output File in Field：data(輸出時的資料名稱)
             
-            ![image.png](assets/image%2050.png)
+            ![image.png](assets/image 50.png)
             
         10. Read/Write Files from Disk(輸出檔案)
             1. Operation：Write File Disk
@@ -3076,22 +3094,22 @@
                 
                 </aside>
                 
-                ![image.png](assets/image%2039.png)
+                ![image.png](assets/image 39.png)
                 
                 ii.   Mac：
                 
                 需先開起權限：
                 
-                ![截圖 2025-03-04 下午1.48.44.png](assets/%E6%88%AA%E5%9C%96_2025-03-04_%E4%B8%8B%E5%8D%881.48.44.png)
+                ![截圖 2025-03-04 下午1.48.44.png](assets/截圖_2025-03-04_下午1.48.44.png)
                 
-                ![截圖 2025-03-04 下午1.48.56.png](assets/%E6%88%AA%E5%9C%96_2025-03-04_%E4%B8%8B%E5%8D%881.48.56.png)
+                ![截圖 2025-03-04 下午1.48.56.png](assets/截圖_2025-03-04_下午1.48.56.png)
                 
-                ![截圖 2025-03-04 下午3.16.43.png](assets/%E6%88%AA%E5%9C%96_2025-03-04_%E4%B8%8B%E5%8D%883.16.43.png)
+                ![截圖 2025-03-04 下午3.16.43.png](assets/截圖_2025-03-04_下午3.16.43.png)
                 
             3. Input Binary Field：data(輸入前一步的資料名稱)
         11. 結果：
         
-        ![image.png](assets/image%2051.png)
+        ![image.png](assets/image 51.png)
         
     - 1-2 AI 文件統整模板
         
@@ -3102,7 +3120,7 @@
     - 3 whisper_translate_agent 流程
         1. On chat message(選擇Allow File Uploads並啟動Allow File Uploads按鈕)(從Chat中輸入音檔路徑)(以windows為例，輸入路徑時必須將原路徑的”\”反斜線改為正斜線”/”或是雙反斜線"\\”才可讀取到檔案位置)
         
-        ![image.png](assets/image%2052.png)
+        ![image.png](assets/image 52.png)
         
         1. Execute Command(使用指令調用whisper模型)
             1. command輸入(欄位右上角必須改選**Expression**)(從On chat message內容輸入中獲取$json.chatInput(語音檔路徑))
@@ -3132,7 +3150,7 @@
             ```
             
         
-        ![image.png](assets/image%2053.png)
+        ![image.png](assets/image 53.png)
         
         1. Read/Write Files from Disk(從硬碟讀取檔案)
             1. Operation：Read Files from Disk
@@ -3142,14 +3160,14 @@
             {{ $('When chat message received').item.json.chatInput.split('\\').pop().split('.')[0]}}.txt
             ```
             
-            ![image.png](assets/image%2054.png)
+            ![image.png](assets/image 54.png)
             
         2. Extract from text file(將檔案從轉換為json格式)
             1. Operation：Extract from text file
             2. Input Binary Field：data(前一步驟輸入的資料名稱)
             3. Destination Output Field：data(輸出時的資料名稱)
             
-            ![image.png](assets/image%2055.png)
+            ![image.png](assets/image 55.png)
             
         3. AI Agent(將資料提供給AI Agent做總結)
             1. Agent：Tools Agent
@@ -3164,7 +3182,7 @@
                 
                 輸入[You are a summary agent, always summarize the text in "zh-tw" language, with the most unique and helpful points, into a numbered list of key points and takeaways. Must reply in"traditional chinese”]
                 
-                ![image.png](assets/image%2056.png)
+                ![image.png](assets/image 56.png)
                 
         4. Ollama Chat Model(選擇要使用的模型)
             1. Credential to connect with：點選Create new credential並輸入[http://localhost:11434](http://localhost:11434/)(11434為Ollama在電腦上預設所開放的對應port，若有更改則須修改為對應的port)，或是點選已經事先連接好的Ollama，(如果是使用docker建立n8n則須輸入[http://host.docker.internal:11434](http://host.docker.internal:11434/)，可以使Docker訪問主機的port)
@@ -3172,27 +3190,27 @@
             
             (Docker版本)
             
-            ![image.png](assets/image%2034.png)
+            ![image.png](assets/image 34.png)
             
             (node.js版本)
             
-            ![image.png](assets/image%2035.png)
+            ![image.png](assets/image 35.png)
             
-            ![image.png](assets/image%2057.png)
+            ![image.png](assets/image 57.png)
             
         5. Convert to File(將資料轉換為Binary格式)
             1. Operation：Cover to Text File
             2. Input Binary Field：output(前一步驟AI Agent所產生的資料名稱)
             3. Destination Output Field：data(輸出時的資料名稱)
             
-            ![image.png](assets/image%2058.png)
+            ![image.png](assets/image 58.png)
             
         6. Read/Write Files from Disk(輸出檔案)
             1. Operation：Write File Disk
             2. File Path and Name：輸入希望儲存檔案的路徑及名稱(欄位右上角必須改選**Expression**)
             3. Input Binary Field：data(輸入前一步的資料名稱)
             
-            ![image.png](assets/image%2059.png)
+            ![image.png](assets/image 59.png)
             
     - 4 LINE_Bot_AI_Agent
         1. 設定n8n-nodes-linewebhook
@@ -3201,17 +3219,17 @@
             3. 點選Install a community node
             4. 輸入n8n-nodes-linewebhook
             
-            ![image.png](assets/image%2060.png)
+            ![image.png](assets/image 60.png)
             
         2. LineWebhook
             1. Credential to connect with：新建一個LINE webhook connect(輸入LINE官方帳號的**Channel Secret)**
                 
-                ![image.png](assets/image%2061.png)
+                ![image.png](assets/image 61.png)
                 
             
               b.  Path：設定自己的webhook path
             
-            ![image.png](assets/image%2062.png)
+            ![image.png](assets/image 62.png)
             
               c.  後續流程：
             
@@ -3219,15 +3237,15 @@
             
             1.1a(windows版本)前往ngrok官網([https://ngrok.com/](https://ngrok.com/))下載ngrok.exe並執行
             
-            ![image.png](assets/image%2063.png)
+            ![image.png](assets/image 63.png)
             
-            ![image.png](assets/image%2064.png)
+            ![image.png](assets/image 64.png)
             
             1.2a複製ngrok下載頁面的指令並進入剛剛的CMD頁面貼上執行
             
-            ![image.png](assets/image%2065.png)
+            ![image.png](assets/image 65.png)
             
-            ![image.png](assets/image%2066.png)
+            ![image.png](assets/image 66.png)
             
             1.3a使用ngrok與本地主機連線(在CMD中輸入以下內容)，並複製出現的通道連結
             
@@ -3235,29 +3253,29 @@
             ngrok http 5678
             ```
             
-            ![image.png](assets/image%2067.png)
+            ![image.png](assets/image 67.png)
             
             1.4a回到 LINE Deveoloers 貼上 webhook(剛剛複製的網址+/webhook-test/path)
             
-            ![image.png](assets/image%2068.png)
+            ![image.png](assets/image 68.png)
             
             1.5a回到 Line official account manager 頁面，在回應設定分頁中，將「聊天」與「 Webhook」功能打開
             
-            ![image.png](assets/image%2069.png)
+            ![image.png](assets/image 69.png)
             
             1.1b前往ngrok官網([https://ngrok.com/](https://ngrok.com/))下載ngrok.exe並執行
             
             1.2a複製ngrok下載頁面的指令並進入剛剛的CMD頁面貼上執行
             
-            ![截圖 2025-03-04 下午1.52.56.png](assets/%E6%88%AA%E5%9C%96_2025-03-04_%E4%B8%8B%E5%8D%881.52.56.png)
+            ![截圖 2025-03-04 下午1.52.56.png](assets/截圖_2025-03-04_下午1.52.56.png)
             
-            ![截圖 2025-03-04 下午1.55.33.png](assets/%E6%88%AA%E5%9C%96_2025-03-04_%E4%B8%8B%E5%8D%881.55.33.png)
+            ![截圖 2025-03-04 下午1.55.33.png](assets/截圖_2025-03-04_下午1.55.33.png)
             
             ![截圖 2025-03-04 下午2.46.52.png](assets/9a9e211d-fb78-48e6-87af-84ced3d3b3ef.png)
             
             記得將`sudo unzip`的路徑改成實際路徑
             
-            ![截圖 2025-03-04 下午2.48.09.png](assets/%E6%88%AA%E5%9C%96_2025-03-04_%E4%B8%8B%E5%8D%882.48.09.png)
+            ![截圖 2025-03-04 下午2.48.09.png](assets/截圖_2025-03-04_下午2.48.09.png)
             
             1.3b使用ngrok與本地主機連線(輸入以下內容)，並複製出現的通道連結
             
@@ -3265,13 +3283,13 @@
             ngrok http 5678
             ```
             
-            ![截圖 2025-03-04 下午2.49.32.png](assets/%E6%88%AA%E5%9C%96_2025-03-04_%E4%B8%8B%E5%8D%882.49.32.png)
+            ![截圖 2025-03-04 下午2.49.32.png](assets/截圖_2025-03-04_下午2.49.32.png)
             
             1.4b(後續請根據1.4a繼續做)
             
             2.回到n8n測試trigger是否能收到LINE訊息
             
-            ![image.png](assets/image%2070.png)
+            ![image.png](assets/image 70.png)
             
         3. AI_Agent
             1. Agent：Tools Agent
@@ -3290,7 +3308,7 @@
                 - 如果使用者詢問歷史事件、百科知識，請使用 Wikipedia 工具。
                 - 請以 zh-TW 給予回應。]
             
-            ![image.png](assets/image%2071.png)
+            ![image.png](assets/image 71.png)
             
         4. Ollama Chat Model(也可使用OpenAI Chat Model等雲端服務)
             1. Credential to connect with：點選Create new credential並輸入[http://localhost:11434](http://localhost:11434/)(11434為Ollama在電腦上預設所開放的對應port，若有更改則須修改為對應的port)，或是點選已經事先連接好的Ollama，(如果是使用docker建立n8n則須輸入[http://host.docker.internal:11434](http://host.docker.internal:11434/)，可以使Docker訪問主機的port)
@@ -3298,32 +3316,32 @@
             
             (Docker版本)
             
-            ![image.png](assets/image%2034.png)
+            ![image.png](assets/image 34.png)
             
             (node.js版本)
             
-            ![image.png](assets/image%2035.png)
+            ![image.png](assets/image 35.png)
             
-            ![image.png](assets/image%2057.png)
+            ![image.png](assets/image 57.png)
             
         5. Window Buffer Memory
             1. Session ID：Define below
             2. Key：{{$json.output}}(抓取前面的內容進行資料搜尋，可以直接拉output)
             3. Context Window Length：(可以自由設定數量)(一次性最多讀取的相關資料數量)
             
-            ![image.png](assets/image%2072.png)
+            ![image.png](assets/image 72.png)
             
         6. Wikipedia(沒有額外設定)
         7. SerpAPI
             1. Credential to connect with：點選Create new credential並輸入Serp API的API Key
             
-            ![image.png](assets/image%2073.png)
+            ![image.png](assets/image 73.png)
             
         8. LineMessageNode(Create a text message)
             1. Message Type：Text
             2. Text：{{ $json.output }}(直接拉取output標籤也可以)
             
-            ![image.png](assets/image%2074.png)
+            ![image.png](assets/image 74.png)
             
         9. LineMessaging
             1. Credential to connect with：點選Create new credential並輸入對應的LINE Developers中官方帳號的**Channel Access Token**
@@ -3331,7 +3349,7 @@
             3. Message：{{ $json.message }}(可以直接拖曳左方message標籤)
             4. ReplyToken：{{ $('LineWebhook').item.json.event.replyToken }}(可以直接拖曳左方replyToken標籤)
                 
-                ![image.png](assets/image%2075.png)
+                ![image.png](assets/image 75.png)
                 
         10. 正式上線：將Webhook URL中的測試 Webhook URL 改為正式Webhook URL(將原先 URL 中的“-test” 刪除即可)
     - 補充：n8n 跟 Line 串接詳細流程
@@ -3345,26 +3363,26 @@
                 
                 →設計固定的行程自動啟動workflow，此處為設定每日為間隔
                 
-                ![image.png](assets/image%2076.png)
+                ![image.png](assets/image 76.png)
                 
             
         2. Read Files from Disk(從桌面讀取檔案)
             
             以Window為例，需將原路徑的”\”反斜線改為正斜線”/”，讀取所需檔案
             
-            ![image.png](assets/image%2077.png)
+            ![image.png](assets/image 77.png)
             
         3. Extract from File
             
             將第二步中所讀取的檔案轉換成PDF檔案
             
-            ![image.png](assets/image%2078.png)
+            ![image.png](assets/image 78.png)
             
         4. Summarization Chain
             
             將資料提供給 Summarization Chain 作總結，
             
-            ![image.png](assets/image%2079.png)
+            ![image.png](assets/image 79.png)
             
             1. Summarization Method: Map Reduce
             2. Individual Summary Prompt / Final Prompt to Combine
@@ -3377,7 +3395,7 @@
                 
             3. 選擇model，以Groq Chat Model為例 model: llama-3.3-70b-specdec
                 
-                ![image.png](assets/image%2080.png)
+                ![image.png](assets/image 80.png)
                 
             4. Document處理
                 
@@ -3385,13 +3403,13 @@
                 
                 Mode:Load All Inputa Data
                 
-                ![image.png](assets/image%2081.png)
+                ![image.png](assets/image 81.png)
                 
             5. Text Splitter
                 
                 選用Token Splitter，因為LLＭ使用Token當作輸入，故選擇此切割方式，並設定Chunk Size為1000，Chunk Overlap為20
                 
-                ![image.png](assets/image%2082.png)
+                ![image.png](assets/image 82.png)
                 
         5. Convert to FileSummarization Chain
             
@@ -3403,7 +3421,7 @@
             
             Put Output File in Field: data
             
-            ![image.png](assets/image%2083.png)
+            ![image.png](assets/image 83.png)
             
         6. Write Files from Disk
             
@@ -3415,12 +3433,12 @@
             
             Input Binary Field: data
             
-            ![image.png](assets/image%2084.png)
+            ![image.png](assets/image 84.png)
             
     - 5-2 Chat_with_crawler_json 流程
         1. 設定Trigger node
             
-            ![image.png](assets/image%2085.png)
+            ![image.png](assets/image 85.png)
             
         2. HTTP Request
             
@@ -3430,7 +3448,7 @@
             
             URL:[`https://feeds.feedburner.com/rsscna/intworld`](https://feeds.feedburner.com/rsscna/intworld)
             
-            ![image.png](assets/image%2086.png)
+            ![image.png](assets/image 86.png)
             
         3. Qdrant Vector Store 
             
@@ -3438,29 +3456,29 @@
             
             1. 註冊完Qdrant後，Create API key(Days until expiration要設定效期)
                 
-                ![image.png](assets/image%2087.png)
+                ![image.png](assets/image 87.png)
                 
             2. 取得API Key(記得先另外儲存下來，之後不會再出現)
                 
-                ![image.png](assets/image%2088.png)
+                ![image.png](assets/image 88.png)
                 
             3. 查看自己的Qdrant URL
                 
-                ![image.png](assets/image%2089.png)
+                ![image.png](assets/image 89.png)
                 
             4. Operation Mode的Credential to connect with 填入剛取得的API Key 及 Qdrant URL 
                 
-                ![image.png](assets/image%2090.png)
+                ![image.png](assets/image 90.png)
                 
             5. Operation Mode: Insert Documents
                 
-                ![截圖 2025-02-27 下午2.36.48.png](assets/%E6%88%AA%E5%9C%96_2025-02-27_%E4%B8%8B%E5%8D%882.36.48.png)
+                ![截圖 2025-02-27 下午2.36.48.png](assets/截圖_2025-02-27_下午2.36.48.png)
                 
             6. Qdrant Collection: from list test
         4. Generate Embeddings
             1. 使用Open AI的 Embeddings模型
                 
-                ![截圖 2025-02-27 下午2.50.46.png](assets/%E6%88%AA%E5%9C%96_2025-02-27_%E4%B8%8B%E5%8D%882.50.46.png)
+                ![截圖 2025-02-27 下午2.50.46.png](assets/截圖_2025-02-27_下午2.50.46.png)
                 
             2. 使用Ollama地端的Embeddings模型
                 
@@ -3468,29 +3486,29 @@
                 
                 https://ihower.tw/blog/archives/12167
                 
-                ![image.png](assets/image%2091.png)
+                ![image.png](assets/image 91.png)
                 
         5. Default Data Loader
             
-            ![截圖 2025-02-27 下午2.41.07.png](assets/%E6%88%AA%E5%9C%96_2025-02-27_%E4%B8%8B%E5%8D%882.41.07.png)
+            ![截圖 2025-02-27 下午2.41.07.png](assets/截圖_2025-02-27_下午2.41.07.png)
             
         6. Recursive Character Text Splitter
             
-            ![截圖 2025-02-27 下午2.44.20.png](assets/%E6%88%AA%E5%9C%96_2025-02-27_%E4%B8%8B%E5%8D%882.44.20.png)
+            ![截圖 2025-02-27 下午2.44.20.png](assets/截圖_2025-02-27_下午2.44.20.png)
             
         7. When chat message received 
         8. AI Agent
             1. Toos Agent
                 
-                ![截圖 2025-02-27 下午2.46.26.png](assets/%E6%88%AA%E5%9C%96_2025-02-27_%E4%B8%8B%E5%8D%882.46.26.png)
+                ![截圖 2025-02-27 下午2.46.26.png](assets/截圖_2025-02-27_下午2.46.26.png)
                 
             2. 連接OpenAI Chat Model
                 
-                ![截圖 2025-02-27 下午2.51.19.png](assets/%E6%88%AA%E5%9C%96_2025-02-27_%E4%B8%8B%E5%8D%882.51.19.png)
+                ![截圖 2025-02-27 下午2.51.19.png](assets/截圖_2025-02-27_下午2.51.19.png)
                 
             3. Context Window Length: 5
                 
-                ![截圖 2025-02-27 下午2.48.07.png](assets/%E6%88%AA%E5%9C%96_2025-02-27_%E4%B8%8B%E5%8D%882.48.07.png)
+                ![截圖 2025-02-27 下午2.48.07.png](assets/截圖_2025-02-27_下午2.48.07.png)
                 
             4. Qdrant Vector Store
                 
@@ -3504,11 +3522,11 @@
                 
                 Qdrant Collection From list: test
                 
-                ![截圖 2025-02-27 下午2.51.55.png](assets/%E6%88%AA%E5%9C%96_2025-02-27_%E4%B8%8B%E5%8D%882.51.55.png)
+                ![截圖 2025-02-27 下午2.51.55.png](assets/截圖_2025-02-27_下午2.51.55.png)
                 
             5. Embeddings OpenAI
                 
-                ![截圖 2025-02-27 下午2.55.09.png](assets/%E6%88%AA%E5%9C%96_2025-02-27_%E4%B8%8B%E5%8D%882.55.09.png)
+                ![截圖 2025-02-27 下午2.55.09.png](assets/截圖_2025-02-27_下午2.55.09.png)
                 
         
     - 6-1 Data_Analyst_Agent 流程
@@ -3517,7 +3535,7 @@
             1. Mode: Manual Mapping
             2. Fields to Set: 自訂 table_id 填入 NocoDB 表格的 ID
                 
-                ![image.png](assets/image%2092.png)
+                ![image.png](assets/image 92.png)
                 
         3. HTTP Request
             1. Method: GET
@@ -3528,14 +3546,14 @@
             3. Authentication: Predefined Credential Type
             4. Credential Type: NocoDB Token 
                 
-                ![image.png](assets/image%2093.png)
+                ![image.png](assets/image 93.png)
                 
         4. Edit Fields1
             1. Mode: Manual Mapping
             2. Fields to Set: 自訂 columns: {{ $json.columns.map(item => item.title).toJsonString() }}
                 1. 從 HTTP Request 的結果中提取 `columns` 欄位，並將每個 column 的 `title` 轉換為 JSON string。
                 
-                ![image.png](assets/image%2094.png)
+                ![image.png](assets/image 94.png)
                 
         5. AI Agent (Data Analyst)
             1. Agent: Tool Agent
@@ -3559,7 +3577,7 @@
             5. 連接 Window Buffer Memory (用於記憶對話)
             6. 連接 NocoDB (作為工具)
             
-            ![image.png](assets/image%2095.png)
+            ![image.png](assets/image 95.png)
             
         6. Groq Chat Model
             1. Model
@@ -3572,7 +3590,7 @@
                 1. 欄位右上角必須要選 `expression`
             3. Context Window Length: 10
             
-            ![image.png](assets/image%2096.png)
+            ![image.png](assets/image 96.png)
             
         8. NocoDB
             1. Credential to connect with: NocoDB Token account
@@ -3590,7 +3608,7 @@
                 {{ $fromAI('filter_formula','formula to filter.  for example, (Ticker,eq,IMMR) will filter for Ticker column equal to IMMR.  the operators are neq for not equal, gt for greater than, etc.  Compound conditions can be expressed like (MCAP,gt,500000000)~or(MCAP,lt,1000000000)') }}
                 ```
                 
-                ![image.png](assets/image%2097.png)
+                ![image.png](assets/image 97.png)
                 
     - 6-2 Data_Analyst_Agent_Visualization_groq 流程
         
@@ -3600,7 +3618,7 @@
             
             設定另一個工作流時，接受全部data
             
-            ![截圖 2025-02-27 下午1.39.58.png](assets/%E6%88%AA%E5%9C%96_2025-02-27_%E4%B8%8B%E5%8D%881.39.58.png)
+            ![截圖 2025-02-27 下午1.39.58.png](assets/截圖_2025-02-27_下午1.39.58.png)
             
         2. AI Agent
             1. Tool Agent
@@ -3608,14 +3626,14 @@
             3. text: Input data:{{ $json.query.query }} [Expression]
             4. System Message:（底下折疊展開查看）
                 
-                ![截圖 2025-02-27 下午1.43.16.png](assets/%E6%88%AA%E5%9C%96_2025-02-27_%E4%B8%8B%E5%8D%881.43.16.png)
+                ![截圖 2025-02-27 下午1.43.16.png](assets/截圖_2025-02-27_下午1.43.16.png)
                 
             5. 連接 Groq Chat Model (調用語言模型)
             6. Structured Output Parser（底下折疊展開查看）
                 
                 用來將輸出內容設定格式
                 
-                ![截圖 2025-02-27 下午1.53.28.png](assets/%E6%88%AA%E5%9C%96_2025-02-27_%E4%B8%8B%E5%8D%881.53.28.png)
+                ![截圖 2025-02-27 下午1.53.28.png](assets/截圖_2025-02-27_下午1.53.28.png)
                 
             7. Edit Fields
                 
@@ -3626,7 +3644,7 @@
                 {{"[https://quickchart.io/chart?width=4](https://quickchart.io/chart?width=4)00&c="+encodeURIComponent($[json.output.to](http://json.output.to/)JsonString()) }} [Expression]
                 ```
                 
-                ![截圖 2025-02-27 下午1.54.32.png](assets/%E6%88%AA%E5%9C%96_2025-02-27_%E4%B8%8B%E5%8D%881.54.32.png)
+                ![截圖 2025-02-27 下午1.54.32.png](assets/截圖_2025-02-27_下午1.54.32.png)
                 
             - System Message
                 
@@ -3953,7 +3971,7 @@
                 
                 ```
                 
-                ![截圖 2025-02-27 下午1.58.43.png](assets/%E6%88%AA%E5%9C%96_2025-02-27_%E4%B8%8B%E5%8D%881.58.43.png)
+                ![截圖 2025-02-27 下午1.58.43.png](assets/截圖_2025-02-27_下午1.58.43.png)
                 
         
     - 6-3 Technical_Analyst_Agent 流程
@@ -3978,7 +3996,7 @@
                 
                 ```
                 
-                ![截圖 2025-02-27 下午3.05.55.png](assets/%E6%88%AA%E5%9C%96_2025-02-27_%E4%B8%8B%E5%8D%883.05.55.png)
+                ![截圖 2025-02-27 下午3.05.55.png](assets/截圖_2025-02-27_下午3.05.55.png)
                 
             4. Groq Chat Model 選用: llama-3.3-70b-specdec
             5. Window Buffer Memory
@@ -3986,7 +4004,7 @@
                 Session ID:  Connected Chat Trigger Node
                 Context Window Length: 5
                 
-                ![截圖 2025-02-27 下午3.05.27.png](assets/%E6%88%AA%E5%9C%96_2025-02-27_%E4%B8%8B%E5%8D%883.05.27.png)
+                ![截圖 2025-02-27 下午3.05.27.png](assets/截圖_2025-02-27_下午3.05.27.png)
                 
             6. Call n8n Workflow Tool
                 
@@ -3995,13 +4013,13 @@
                 Workflow ID: {{ $[workflow.id](http://workflow.id/) }} [Expressions]
                 Field to Return: response
                 
-                ![截圖 2025-02-27 下午2.14.08.png](assets/%E6%88%AA%E5%9C%96_2025-02-27_%E4%B8%8B%E5%8D%882.14.08.png)
+                ![截圖 2025-02-27 下午2.14.08.png](assets/截圖_2025-02-27_下午2.14.08.png)
                 
         3. Execute Sub-workflow
             
             設定離開另個工作流時，接受全部data
             
-            ![截圖 2025-02-27 下午1.39.58.png](assets/%E6%88%AA%E5%9C%96_2025-02-27_%E4%B8%8B%E5%8D%881.39.58.png)
+            ![截圖 2025-02-27 下午1.39.58.png](assets/截圖_2025-02-27_下午1.39.58.png)
             
         4. Edit Fields (Set)
             
@@ -4009,12 +4027,12 @@
             name: company
             function: {{ $json.query}} [Expression]
             
-            ![截圖 2025-02-27 下午2.17.59.png](assets/%E6%88%AA%E5%9C%96_2025-02-27_%E4%B8%8B%E5%8D%882.17.59.png)
+            ![截圖 2025-02-27 下午2.17.59.png](assets/截圖_2025-02-27_下午2.17.59.png)
             
         5. HTTP Request (Tradingview Chart)
             1. Import cURL commandcurl （注意x-api-key記得更換成自己的）
                 
-                ![截圖 2025-02-27 下午3.11.53.png](assets/%E6%88%AA%E5%9C%96_2025-02-27_%E4%B8%8B%E5%8D%883.11.53.png)
+                ![截圖 2025-02-27 下午3.11.53.png](assets/截圖_2025-02-27_下午3.11.53.png)
                 
                 ```
                 curl -X POST [https://api.chart-img.com/v2/tradingview/advanced-chart](https://api.chart-img.com/v2/tradingview/advanced-chart) \
@@ -4024,7 +4042,7 @@
                 -o chart-img-03.png
                 ```
                 
-                ![截圖 2025-02-27 晚上8.53.13.png](assets/%E6%88%AA%E5%9C%96_2025-02-27_%E6%99%9A%E4%B8%8A8.53.13.png)
+                ![截圖 2025-02-27 晚上8.53.13.png](assets/截圖_2025-02-27_晚上8.53.13.png)
                 
                 1. URL:[https://api.chart-img.com/v2/tradingview/advanced-chart/storage](https://api.chart-img.com/v2/tradingview/advanced-chart/storage)
                 2. Method: POST
@@ -4035,7 +4053,7 @@
                     Name: x-api-key
                     Value: YOUR_API_KEY（更換成自己的）
                     
-                    ![截圖 2025-02-28 下午4.04.45.png](assets/%E6%88%AA%E5%9C%96_2025-02-28_%E4%B8%8B%E5%8D%884.04.45.png)
+                    ![截圖 2025-02-28 下午4.04.45.png](assets/截圖_2025-02-28_下午4.04.45.png)
                     
                 6. Send Headers: On
                 7. Specify Headers: Using Fields Below
@@ -4093,9 +4111,9 @@
                     
         6. HTTP Request (Download Chart)
             
-            ![截圖 2025-02-27 晚上8.54.56.png](assets/%E6%88%AA%E5%9C%96_2025-02-27_%E6%99%9A%E4%B8%8A8.54.56.png)
+            ![截圖 2025-02-27 晚上8.54.56.png](assets/截圖_2025-02-27_晚上8.54.56.png)
             
-            ![截圖 2025-02-27 晚上8.55.26.png](assets/%E6%88%AA%E5%9C%96_2025-02-27_%E6%99%9A%E4%B8%8A8.55.26.png)
+            ![截圖 2025-02-27 晚上8.55.26.png](assets/截圖_2025-02-27_晚上8.55.26.png)
             
             Method: GET
             URL: {{ $json.url }} [Expressions]
@@ -4106,9 +4124,9 @@
             
         7. Basic LLM Chain
             
-            ![截圖 2025-02-27 晚上9.00.14.png](assets/%E6%88%AA%E5%9C%96_2025-02-27_%E6%99%9A%E4%B8%8A9.00.14.png)
+            ![截圖 2025-02-27 晚上9.00.14.png](assets/截圖_2025-02-27_晚上9.00.14.png)
             
-            ![截圖 2025-02-27 晚上9.00.25.png](assets/%E6%88%AA%E5%9C%96_2025-02-27_%E6%99%9A%E4%B8%8A9.00.25.png)
+            ![截圖 2025-02-27 晚上9.00.25.png](assets/截圖_2025-02-27_晚上9.00.25.png)
             
             Source for Prompt (User Message):Define below
             Text: text Message
@@ -4122,7 +4140,7 @@
             
         8. Edit Fields
             
-            ![截圖 2025-02-27 晚上9.02.35.png](assets/%E6%88%AA%E5%9C%96_2025-02-27_%E6%99%9A%E4%B8%8A9.02.35.png)
+            ![截圖 2025-02-27 晚上9.02.35.png](assets/截圖_2025-02-27_晚上9.02.35.png)
             
             Mode: Manual Mapping
             Fields to Set:
@@ -4138,9 +4156,9 @@
         
         MCP 旨在解決企業 AI 採用的一個基本問題：N×M 整合問題——將大量 AI 應用程式與各種工具和資料來源連接起來的挑戰，每個工具和資料來源都需要客製化整合。雖然 ODBC (Open Database Connectivity) 標準化了資料庫的連接方式，但 MCP 試圖對 AI 模型做同樣的事情，為 AI 與本地檔案系統、雲端服務、協作平台和企業應用程式等各種環境互動提供一致的方式。
         
-        ![image.png](assets/image%2098.png)
+        ![image.png](assets/image 98.png)
         
-        ![image.png](assets/image%2099.png)
+        ![image.png](assets/image 99.png)
         
         該協議旨在消除開發人員每次需要將新工具或資料來源連結到 AI 系統時編寫冗餘自訂整合程式碼的需求。相反，MCP 為所有這些連接提供了一種統一的方法，使開發人員可以花更多時間建立功能，而減少花在整合上的時間。為了說明 MCP 的廣泛實用性，想像 AI 模型需要與不同類型的資料互動：從 PostgreSQL 資料庫到 Google Drive 或 Slack 等雲端平台。 MCP 的目標是簡化這些交互，減少目前必要的手動編碼。
         
@@ -4539,19 +4557,19 @@
 
 - 癌症營養師衛教系統
     
-    ![Untitled](assets/Untitled%2092.png)
+    ![Untitled](assets/Untitled 92.png)
     
-    ![Untitled](assets/Untitled%2093.png)
+    ![Untitled](assets/Untitled 93.png)
     
-    ![投影片13.PNG](assets/%E6%8A%95%E5%BD%B1%E7%89%8713.png)
+    ![投影片13.PNG](assets/投影片13.png)
     
-    ![投影片14.PNG](assets/%E6%8A%95%E5%BD%B1%E7%89%8714.png)
+    ![投影片14.PNG](assets/投影片14.png)
     
     [725464117.714952.mp4](assets/725464117.714952.mp4)
     
 - 飲食聊天機器人
     
-    ![投影片15.PNG](assets/%E6%8A%95%E5%BD%B1%E7%89%8715.png)
+    ![投影片15.PNG](assets/投影片15.png)
     
     [媒體1.mp4](assets/%E5%AA%92%E9%AB%941.mp4)
     
@@ -4608,17 +4626,17 @@
                 
                 安裝流程：Next → I Agree → 個人用點 Next → 預設路徑點 Next →全部勾選後點 Next →等待安裝完成後點 Next→ 點Finish
                 
-                ![Untitled](assets/Untitled%2094.png)
+                ![Untitled](assets/Untitled 94.png)
                 
-                ![Untitled](assets/Untitled%2095.png)
+                ![Untitled](assets/Untitled 95.png)
                 
-                ![Untitled](assets/Untitled%2096.png)
+                ![Untitled](assets/Untitled 96.png)
                 
-                ![Untitled](assets/Untitled%2097.png)
+                ![Untitled](assets/Untitled 97.png)
                 
-                ![Untitled](assets/Untitled%2098.png)
+                ![Untitled](assets/Untitled 98.png)
                 
-                ![Untitled](assets/Untitled%2099.png)
+                ![Untitled](assets/Untitled 99.png)
                 
             - Linux
                 
@@ -4749,7 +4767,7 @@ https://docs.google.com/document/d/1AwylUdyciJhvYn-64ltpe79UL7_G-BmNwqs4NNt4oQ0/
 - 從 DeepSeek-V3 到 Kimi K2 的 LLM 架構  [https://magazine.sebastianraschka.com/p/the-big-llm-architecture-comparison](https://magazine.sebastianraschka.com/p/the-big-llm-architecture-comparison)
 - OpenAI 推出六年來首款開源權重模型 gpt-oss
     
-    ![image.png](assets/image%20100.png)
+    ![image.png](assets/image 100.png)
     
     **最新消息：** OpenAI 發表了自 2019 年的 GPT-2 以來，首款可公開取得權重的模型。gpt-oss 系列包含兩款專為代理應用設計的混合專家模型 (MoE)：gpt-oss-120b 和 gpt-oss-20b，兩者皆可免費使用與修改。
     
@@ -4837,4 +4855,4 @@ https://docs.google.com/document/d/1AwylUdyciJhvYn-64ltpe79UL7_G-BmNwqs4NNt4oQ0/
 
 聯絡信箱：[hi@aiacademy.tw](mailto:hi@aiacademy.tw)
 
-![image.png](assets/image%20101.png)
+![image.png](assets/image 101.png)

@@ -1,6 +1,6 @@
 # String Output Parser
 
-![image.png](../assets/String%20Output%20Parser/image.png)
+![image.png](../assets/String Output Parser/image.png)
 
 這張圖展示了 **`StrOutputParser`** 的概念與應用場景，主要用於將模型的輸出（例如 `AIMessage` 或文字）直接轉換為字符串，並保證輸出內容不經過任何改變。以下是對該圖的詳細解釋：
 
