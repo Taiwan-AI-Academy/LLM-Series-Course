@@ -1,0 +1,254 @@
+{
+  "name": "Whisper",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {
+          "allowFileUploads": false
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        80,
+        0
+      ],
+      "id": "59e65b17-6001-421d-b1f7-63fef312e907",
+      "name": "When chat message received",
+      "webhookId": "a7941711-4258-487e-94b4-7f4e3d6bd52e"
+    },
+    {
+      "parameters": {
+        "command": "=D:\\python\\Whisper\\.venv\\Scripts\\python.exe D:\\python\\Whisper\\main.py \"{{ $json.chatInput }}\""
+      },
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        320,
+        0
+      ],
+      "id": "dd1e70c7-d7f8-492d-a5c2-854e67700e17",
+      "name": "Execute Command"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.stdout }}",
+        "options": {
+          "systemMessage": "You are a summary agent, always summarize the text in \"zh-tw\" language, with the most unique and helpful points, into a numbered list of key points and takeaways.\nMust reply in \"traditional chinese zh-TW\""
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.9,
+      "position": [
+        540,
+        0
+      ],
+      "id": "758ade12-1482-4cec-989c-31d1bfa027b3",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4o-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        540,
+        160
+      ],
+      "id": "4ca0f43f-afcf-4ae8-9a75-b378167dd94d",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "2MvljI6263cAhitO",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "toText",
+        "sourceProperty": "output",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        900,
+        0
+      ],
+      "id": "d7c203e8-63cc-4e6d-807d-ff39248582d7",
+      "name": "Convert to File"
+    },
+    {
+      "parameters": {
+        "operation": "write",
+        "fileName": "={{ $('When chat message received').item.json.chatInput.split('/').pop().split('.')[0] }}_summary.txt",
+        "dataPropertyName": "=data",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1,
+      "position": [
+        1100,
+        0
+      ],
+      "id": "a3a6da2c-1a40-45d5-b5a9-79a3d4caa01a",
+      "name": "Read/Write Files from Disk"
+    },
+    {
+      "parameters": {
+        "content": "## 在 Chat 中輸入音檔路徑開始",
+        "height": 400,
+        "width": 200
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        40,
+        -120
+      ],
+      "id": "d1c7d666-5028-42f3-8c87-112d36d80cf5",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "content": "## 使用指令調用 Whisper 模型\n#### （Speech to text）",
+        "height": 400,
+        "width": 220,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        260,
+        -120
+      ],
+      "id": "77c48cef-81bb-432e-b6a6-71bc74ab0e25",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "content": "## 將資料提供給 AI Agent 作總結",
+        "height": 400,
+        "width": 340,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        500,
+        -120
+      ],
+      "id": "f414fe22-07a1-4aac-b1f3-906f2f5a5cf4",
+      "name": "Sticky Note4"
+    },
+    {
+      "parameters": {
+        "content": "## 轉換成 Binary 格式",
+        "height": 400,
+        "width": 180,
+        "color": 5
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        860,
+        -120
+      ],
+      "id": "a7e7fb8d-9bb8-43ff-ae1e-c8f7f2a3c886",
+      "name": "Sticky Note5"
+    },
+    {
+      "parameters": {
+        "content": "## 輸出檔案",
+        "height": 400,
+        "width": 180,
+        "color": 5
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        1060,
+        -120
+      ],
+      "id": "e54da030-cb90-41a2-8cc6-f012bfe266e0",
+      "name": "Sticky Note6"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "Execute Command",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute Command": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Convert to File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File": {
+      "main": [
+        [
+          {
+            "node": "Read/Write Files from Disk",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "7f64906a-c5e5-4425-8e8a-6aa5554c08c7",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "d4da80887b60b1610c17cbbc5a3a5fe3f4ab51c9442041728cb281840cef4f7e"
+  },
+  "id": "YaMYV6Vl52Euf97U",
+  "tags": []
+}

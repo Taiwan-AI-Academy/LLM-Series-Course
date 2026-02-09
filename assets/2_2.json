@@ -1,0 +1,622 @@
+{
+  "name": "2-2",
+  "nodes": [
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "d6594dfa-b5de-46a2-9106-2a7940dfbf4c",
+              "name": "path",
+              "value": "={{ $json.path.replaceAll(\"\\\\\",\"/\") }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        260,
+        20
+      ],
+      "id": "394848ed-2888-49b2-b035-4db8d7ef9e4b",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "fileSelector": "={{ $json.path }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1,
+      "position": [
+        460,
+        20
+      ],
+      "id": "7dc73842-6a7c-40e4-8433-796b5ae28d46",
+      "name": "Read/Write Files from Disk"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.fileExtension }}",
+                    "rightValue": "txt",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "4588441c-5617-4025-8789-935572956a59"
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "95b87210-d683-4293-9887-4e764f36aba7",
+                    "leftValue": "={{ $json.fileExtension }}",
+                    "rightValue": "csv",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "47121388-2a6b-4ef0-b29e-e0a3805453e1",
+                    "leftValue": "={{ $json.fileExtension }}",
+                    "rightValue": "xlsx",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "f16459a9-33bf-4c59-80f8-859e1c4b95a1",
+                    "leftValue": "={{ $json.fileExtension }}",
+                    "rightValue": "pdf",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        660,
+        0
+      ],
+      "id": "6d08350f-8e58-4a0a-ae00-490c831fccb6",
+      "name": "Switch"
+    },
+    {
+      "parameters": {
+        "operation": "text",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [
+        880,
+        -220
+      ],
+      "id": "0511af6e-5776-4e24-bc39-ae4557c02660",
+      "name": "Extract from File"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [
+        880,
+        -60
+      ],
+      "id": "54aa916d-ba53-4fbd-8a97-e4a4e4eeda72",
+      "name": "Extract from File1"
+    },
+    {
+      "parameters": {
+        "operation": "xlsx",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [
+        880,
+        100
+      ],
+      "id": "52958f2c-da37-4391-b9a7-78003c17b7e9",
+      "name": "Extract from File2"
+    },
+    {
+      "parameters": {
+        "operation": "pdf",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [
+        880,
+        260
+      ],
+      "id": "d5f910a2-eb89-4458-bc3f-0c07e59b729e",
+      "name": "Extract from File3"
+    },
+    {
+      "parameters": {
+        "aggregate": "aggregateAllItemData",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [
+        1120,
+        20
+      ],
+      "id": "857b2a17-e189-49dc-b58e-d19de89a46a0",
+      "name": "Aggregate"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.data || $json.text}}",
+        "options": {
+          "systemMessage": "You are a summary agent, always summarize the text in \"zh-tw\" language, with the most unique and helpful points, into a numbered list of key points and takeways\n\nMust reply in \"traditional chinese\""
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.9,
+      "position": [
+        1340,
+        20
+      ],
+      "id": "7ce40fd3-3deb-4346-943c-f0c01ed12b54",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4o-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        1340,
+        200
+      ],
+      "id": "313df0e1-2b80-4f5a-99d1-7ac74d659376",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "2MvljI6263cAhitO",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "toText",
+        "sourceProperty": "output",
+        "options": {
+          "encoding": "utf8"
+        }
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        1700,
+        20
+      ],
+      "id": "94c509f6-6ab2-4bc9-bed8-a2d0d6c152e1",
+      "name": "Convert to File"
+    },
+    {
+      "parameters": {
+        "operation": "write",
+        "fileName": "D:\\\\課程\\\\20250517\\\\n8n\\\\output\\\\2-2 n8n_test_data.txt",
+        "options": {
+          "append": false
+        }
+      },
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1,
+      "position": [
+        1900,
+        20
+      ],
+      "id": "252648b0-f927-489c-b127-4c9044673658",
+      "name": "Read/Write Files from Disk1"
+    },
+    {
+      "parameters": {
+        "triggerOn": "folder",
+        "path": "D:\\\\課程\\\\20250517\\\\n8n\\\\watch",
+        "events": [
+          "add"
+        ],
+        "options": {}
+      },
+      "type": "n8n-nodes-base.localFileTrigger",
+      "typeVersion": 1,
+      "position": [
+        40,
+        20
+      ],
+      "id": "2a91b94e-59a8-41fe-b5a7-2da50811d5a6",
+      "name": "Local File Trigger"
+    },
+    {
+      "parameters": {
+        "content": "## 由造訪文件變動開始\n(路徑為 User/username/ 的相對路徑)",
+        "height": 340,
+        "width": 200
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        0,
+        -120
+      ],
+      "typeVersion": 1,
+      "id": "f75c0cfa-9454-4db3-9d3b-14252d1c9648",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "content": "## 修改路徑格式\n(path\\ → path/)",
+        "height": 300,
+        "width": 180,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        220,
+        -80
+      ],
+      "typeVersion": 1,
+      "id": "729a8b94-8a09-4dc6-bb90-b43cfc207054",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "content": "## 從硬碟讀取檔案 (Binary)",
+        "height": 300,
+        "width": 180,
+        "color": 2
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        420,
+        -80
+      ],
+      "typeVersion": 1,
+      "id": "6f22fa64-d32e-48d4-a0c7-40617bd382f8",
+      "name": "Sticky Note2"
+    },
+    {
+      "parameters": {
+        "content": "## 由附檔名決定如何讀取",
+        "height": 300,
+        "width": 180,
+        "color": 3
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        620,
+        -80
+      ],
+      "typeVersion": 1,
+      "id": "f28a77fe-6a24-4e4a-af27-13e715594389",
+      "name": "Sticky Note3"
+    },
+    {
+      "parameters": {
+        "content": "## 轉換成 Json 格式，並做處理",
+        "height": 700,
+        "width": 420,
+        "color": 2
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        840,
+        -280
+      ],
+      "typeVersion": 1,
+      "id": "9d119e69-cf0c-4ec1-86f0-0972838baf8f",
+      "name": "Sticky Note4"
+    },
+    {
+      "parameters": {
+        "content": "## 將資料提供給 AI Agent 作結論",
+        "height": 400,
+        "width": 340,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1300,
+        -80
+      ],
+      "typeVersion": 1,
+      "id": "bead23f4-663d-4e95-8343-9ad344821079",
+      "name": "Sticky Note5"
+    },
+    {
+      "parameters": {
+        "content": "## 轉換成 Binary 格式",
+        "height": 300,
+        "width": 180,
+        "color": 5
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1660,
+        -80
+      ],
+      "typeVersion": 1,
+      "id": "b7fda106-b4c8-4b97-baf2-4d568330afd3",
+      "name": "Sticky Note6"
+    },
+    {
+      "parameters": {
+        "content": "## 輸出檔案",
+        "height": 300,
+        "width": 180,
+        "color": 5
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1860,
+        -80
+      ],
+      "typeVersion": 1,
+      "id": "e31cb60c-c463-4516-956c-69820c8e06f9",
+      "name": "Sticky Note7"
+    },
+    {
+      "parameters": {
+        "content": "### 由於 Windows 作業系統的路徑格式為 Path\\subpath... 需轉換為Path/subpath...\n\n* 依照作業系統需求決定是否需要此 Node",
+        "height": 140,
+        "width": 300,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        220,
+        -240
+      ],
+      "typeVersion": 1,
+      "id": "74b4426c-30d2-4ea2-b047-49f40ff36ca3",
+      "name": "Sticky Note8"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Read/Write Files from Disk",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read/Write Files from Disk": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "Extract from File",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Extract from File1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Extract from File2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Extract from File3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract from File1": {
+      "main": [
+        [
+          {
+            "node": "Aggregate",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract from File2": {
+      "main": [
+        [
+          {
+            "node": "Aggregate",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aggregate": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Convert to File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract from File": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract from File3": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File": {
+      "main": [
+        [
+          {
+            "node": "Read/Write Files from Disk1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Local File Trigger": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "50b5d7c6-9a03-48b8-8884-9652cdba3cfb",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "d4da80887b60b1610c17cbbc5a3a5fe3f4ab51c9442041728cb281840cef4f7e"
+  },
+  "id": "k2FMyX78UiOdl0J7",
+  "tags": []
+}

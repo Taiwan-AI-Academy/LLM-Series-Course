@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "instanceId": "c7393498c0893b01cb94819eb32f91ed4f191a340c91dbe9421a04304f6678d0"
+  },
+  "nodes": [
+    {
+      "parameters": {
+        "model": "gemma2:2b",
+        "options": {}
+      },
+      "id": "e3e739db-fb18-47c6-b11e-3112dbc1a40e",
+      "name": "Ollama Chat Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [
+        700,
+        600
+      ],
+      "notesInFlow": false,
+      "credentials": {
+        "ollamaApi": {
+          "id": "Pif3HdZ8TRcIlBmi",
+          "name": "Ollama account"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "id": "53ca2dd5-2e27-43fd-887e-04b5431d1b63",
+      "name": "Basic LLM Chain",
+      "type": "@n8n/n8n-nodes-langchain.chainLlm",
+      "typeVersion": 1.3,
+      "position": [
+        680,
+        460
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "toText",
+        "sourceProperty": "text",
+        "options": {
+          "encoding": "utf8"
+        }
+      },
+      "id": "cc130b38-d5da-4306-896d-135f0ea85fda",
+      "name": "Convert to File",
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        1060,
+        460
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "1f8fbf16-f833-4e9d-8e06-740d76ef29a5",
+      "name": "Chat Trigger",
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1,
+      "position": [
+        460,
+        460
+      ],
+      "webhookId": "cdb5c076-d458-4b9d-8398-f43bd25059b1"
+    },
+    {
+      "parameters": {
+        "operation": "write",
+        "fileName": "data.txt",
+        "options": {}
+      },
+      "id": "d2001067-6ac0-4daf-addd-7692c384cfe9",
+      "name": "Read/Write Files from Disk",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1,
+      "position": [
+        1280,
+        460
+      ]
+    }
+  ],
+  "connections": {
+    "Ollama Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Basic LLM Chain": {
+      "main": [
+        [
+          {
+            "node": "Convert to File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File": {
+      "main": [
+        [
+          {
+            "node": "Read/Write Files from Disk",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Chat Trigger": {
+      "main": [
+        [
+          {
+            "node": "Basic LLM Chain",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {}
+}

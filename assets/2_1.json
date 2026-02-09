@@ -1,0 +1,333 @@
+{
+  "name": "2-1",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        20
+      ],
+      "id": "5f46eed5-0ece-4c04-89f6-68ec65cd046b",
+      "name": "When clicking ‘Test workflow’"
+    },
+    {
+      "parameters": {
+        "fileSelector": "D:\\\\課程\\\\20250517\\\\n8n\\\\resources\\\\2-1 n8n_test_data.csv",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1,
+      "position": [
+        220,
+        20
+      ],
+      "id": "6b867c81-f0fa-436c-9617-30b2fae3e1c1",
+      "name": "Read/Write Files from Disk"
+    },
+    {
+      "parameters": {
+        "binaryPropertyName": "=data",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [
+        420,
+        20
+      ],
+      "id": "709333d2-bb4b-4427-935f-37b0e82a5b52",
+      "name": "Extract from File"
+    },
+    {
+      "parameters": {
+        "aggregate": "aggregateAllItemData",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [
+        620,
+        20
+      ],
+      "id": "9b16fa67-509f-4132-80f8-24a7832c26e1",
+      "name": "Aggregate"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.data }}",
+        "options": {
+          "systemMessage": "You are a summary agent, always summarize the text in \"zh-tw\" language, with the most unique and helpful points, into a numbered list of key points and takeways\n\nMust reply in \"traditional chinese\""
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.9,
+      "position": [
+        820,
+        20
+      ],
+      "id": "15da5e02-6163-417f-9152-278a251e881f",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4o-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        820,
+        200
+      ],
+      "id": "f4ac1322-5c1c-4210-91f4-c8cab230d5f1",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "2MvljI6263cAhitO",
+          "name": "OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "toText",
+        "sourceProperty": "output",
+        "options": {
+          "encoding": "utf8"
+        }
+      },
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        1180,
+        20
+      ],
+      "id": "df8caff0-792e-45b6-9c41-f45ec016c59e",
+      "name": "Convert to File"
+    },
+    {
+      "parameters": {
+        "operation": "write",
+        "fileName": "D:\\\\課程\\\\20250517\\\\n8n\\\\output\\\\2-1 n8n_test_data.txt",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1,
+      "position": [
+        1380,
+        20
+      ],
+      "id": "6eef82aa-af44-455b-8e8d-9c3ad4996f09",
+      "name": "Read/Write Files from Disk1"
+    },
+    {
+      "parameters": {
+        "content": "## 點擊 Test Workflow 開始",
+        "height": 400,
+        "width": 220
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        -60,
+        -80
+      ],
+      "typeVersion": 1,
+      "id": "ece60b97-4172-459d-bd8f-3b93a0b78df4",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "content": "## 從硬碟讀取檔案 (Binary)",
+        "height": 400,
+        "width": 180,
+        "color": 2
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        180,
+        -80
+      ],
+      "typeVersion": 1,
+      "id": "c3f50f36-c0f2-42fe-a1a8-fbc3b1302468",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "content": "## 轉換成 Json 格式",
+        "height": 400,
+        "width": 180,
+        "color": 2
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        380,
+        -80
+      ],
+      "typeVersion": 1,
+      "id": "43eb0194-a783-42d6-ab39-986d25a77700",
+      "name": "Sticky Note2"
+    },
+    {
+      "parameters": {
+        "content": "## 將多筆資料合成 1 筆",
+        "height": 400,
+        "width": 180,
+        "color": 2
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        580,
+        -80
+      ],
+      "typeVersion": 1,
+      "id": "e7615579-15d1-43cf-b7ba-2b8bdf86112e",
+      "name": "Sticky Note3"
+    },
+    {
+      "parameters": {
+        "content": "## 將資料提供給 AI Agent 作總結",
+        "height": 400,
+        "width": 340,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        780,
+        -80
+      ],
+      "typeVersion": 1,
+      "id": "d1ab99af-d207-4a9d-9254-e62b1753c69a",
+      "name": "Sticky Note4"
+    },
+    {
+      "parameters": {
+        "content": "## 轉換成 Binary 格式",
+        "height": 400,
+        "width": 180,
+        "color": 5
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1140,
+        -80
+      ],
+      "typeVersion": 1,
+      "id": "40452fba-343b-4416-9fdf-070ec16fccf7",
+      "name": "Sticky Note5"
+    },
+    {
+      "parameters": {
+        "content": "## 輸出檔案",
+        "height": 400,
+        "width": 180,
+        "color": 5
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1340,
+        -80
+      ],
+      "typeVersion": 1,
+      "id": "37f441b8-b271-4e49-ac9f-1bf4cb4c336d",
+      "name": "Sticky Note6"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Test workflow’": {
+      "main": [
+        [
+          {
+            "node": "Read/Write Files from Disk",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read/Write Files from Disk": {
+      "main": [
+        [
+          {
+            "node": "Extract from File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract from File": {
+      "main": [
+        [
+          {
+            "node": "Aggregate",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aggregate": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Convert to File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File": {
+      "main": [
+        [
+          {
+            "node": "Read/Write Files from Disk1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "f9d5f5c0-6b4b-441d-92f3-9fce99be594f",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "d4da80887b60b1610c17cbbc5a3a5fe3f4ab51c9442041728cb281840cef4f7e"
+  },
+  "id": "vcjwXDwF1D0aG3Xj",
+  "tags": []
+}
