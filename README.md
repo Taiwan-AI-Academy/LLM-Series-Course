@@ -9,48 +9,53 @@
 **來源：** 財團法人台灣人工智慧學校基金會  
 **聯絡信箱：** hi@aiacademy.tw
 
+![AI 應用工具包](images/banner.png)
 
 ---
-
-![AI 應用工具包](images/banner.png)
 
 ## 📚 課程架構
 
-| 分類 | 內容 | 檔案 |
+| 課程 | 內容 | 檔案 |
 |------|------|------|
-| **Part I 初階班** | Prompt Engineering & Make 自動化 | [part1-beginner.md](./part1-beginner.md) |
-| **Part II 中階班** | n8n 流程自動化 | [part2-intermediate.md](./part2-intermediate.md) |
-| **Part III 高階班** | LangChain, RAG, Fine-tuning | [part3-advanced.md](./part3-advanced.md) |
-| **補充資源** | DeepSeek、CAG、開源模型等 | [supplementary.md](./supplementary.md) |
-| **工具與設定** | API Key 取得、軟體安裝 | [setup.md](./setup.md) |
+| **Part I 初階班** | Prompt Engineering & Make 自動化 | [part1-beginner.md](part1-beginner.md) |
+| **Part II 中階班** | n8n 流程自動化 & AI 整合 | [part2-intermediate.md](part2-intermediate.md) |
+| **Part III 高階班** | LangChain, RAG, Fine-tuning + 補充資源 | [part3-advanced.md](part3-advanced.md) |
+
+📄 **完整版（單一檔案）：** [notion-export-full.md](notion-export-full.md)
 
 ---
 
-## 📄 子頁面（詳細內容）
+## 📂 資料夾結構
 
-### LangChain 教學
-| 主題 | 檔案 |
-|------|------|
-| Prompt Template & Prompt | [subpages/Prompt Template & Prompt.md](subpages/Prompt%20Template%20%26%20Prompt.md) |
-| Chat Prompt Template & Chat Prompt (1) | [subpages/Chat Prompt Template & Chat Prompt-1.md](subpages/Chat%20Prompt%20Template%20%26%20Chat%20Prompt-1.md) |
-| Chat Prompt Template & Chat Prompt (2) | [subpages/Chat Prompt Template & Chat Prompt-2.md](subpages/Chat%20Prompt%20Template%20%26%20Chat%20Prompt-2.md) |
-| Partial Variables in Prompt Template (1) | [subpages/Partial Variables in Prompt Template-1.md](subpages/Partial%20Variables%20in%20Prompt%20Template-1.md) |
-| Partial Variables in Prompt Template (2) | [subpages/Partial Variables in Prompt Template-2.md](subpages/Partial%20Variables%20in%20Prompt%20Template-2.md) |
-| LLM vs Chat Model | [subpages/LLM vs Chat Model.md](subpages/LLM%20vs%20Chat%20Model.md) |
-| Messages | [subpages/Messages.md](subpages/Messages.md) |
-| Output Parser | [subpages/Output Parser.md](subpages/Output%20Parser.md) |
-| String Output Parser | [subpages/String Output Parser.md](subpages/String%20Output%20Parser.md) |
+```
+LLM-Series-Course/
+├── README.md                  # 本檔案 - 總覽與目錄
+├── part1-beginner.md          # Part I 初階班（Prompt, Make）
+├── part2-intermediate.md      # Part II 中階班（n8n）
+├── part3-advanced.md          # Part III 高階班 + 補充資源
+├── notion-export-full.md      # Notion 原始匯出完整內容
+├── images/                    # 課程地圖圖片
+│   ├── banner.png
+│   ├── course-map-intermediate.png
+│   └── course-map-advanced.png
+├── subpages/                  # 子頁面詳細內容
+│   ├── 課前安裝軟體.md
+│   ├── 導入自動化評估方式.md
+│   ├── Prompt Template & Prompt.md
+│   ├── Messages.md
+│   ├── Chat Prompt Template & Chat Prompt-1.md
+│   ├── Chat Prompt Template & Chat Prompt-2.md
+│   ├── Partial Variables in Prompt Template-1.md
+│   ├── Partial Variables in Prompt Template-2.md
+│   ├── LLM vs Chat Model.md
+│   ├── Output Parser.md
+│   ├── String Output Parser.md
+│   ├── 2025年IBM舉辦的企業級RAG挑戰第一名演算法.md
+│   └── 停止使用RAG，改用CAG吧！🚫.md
+└── assets/                    # 圖片、PDF、影片等附件（293 個檔案）
+```
 
-### 工具與參考
-| 主題 | 檔案 |
-|------|------|
-| 課前安裝軟體 | [subpages/課前安裝軟體.md](subpages/課前安裝軟體.md) |
-| 導入自動化評估方式 | [subpages/導入自動化評估方式.md](subpages/導入自動化評估方式.md) |
-| IBM 企業級 RAG 挑戰第一名 | [subpages/2025年IBM舉辦的企業級RAG挑戰第一名演算法.md](subpages/2025年IBM舉辦的企業級RAG挑戰第一名演算法.md) |
-| 停止使用 RAG，改用 CAG 吧！ | [subpages/停止使用RAG，改用CAG吧！🚫.md](subpages/停止使用RAG，改用CAG吧！🚫%20中研院資訊所%20黃瀚萱%20助研究員跟政大資科合作的論文！🌟.md) |
-
-### 完整 Notion Export
-- [notion-export-full.md](notion-export-full.md) — Notion 原始匯出完整內容
+---
 
 ## 📖 授權
 
