@@ -2525,9 +2525,9 @@
     ![image.png](assets/image%2027.png)
     
 
-[課前安裝軟體](assets/%E8%AA%B2%E5%89%8D%E5%AE%89%E8%A3%9D%E8%BB%9F%E9%AB%94%2028154713b8fe814f952ce35af582f24b.md)
+[課前安裝軟體](subpages/%E8%AA%B2%E5%89%8D%E5%AE%89%E8%A3%9D%E8%BB%9F%E9%AB%94.md)
 
-[導入自動化評估方式](assets/%E5%B0%8E%E5%85%A5%E8%87%AA%E5%8B%95%E5%8C%96%E8%A9%95%E4%BC%B0%E6%96%B9%E5%BC%8F%2028154713b8fe814881eeec5d5227b440.md)
+[導入自動化評估方式](subpages/%E5%B0%8E%E5%85%A5%E8%87%AA%E5%8B%95%E5%8C%96%E8%A9%95%E4%BC%B0%E6%96%B9%E5%BC%8F.md)
 
 - 自動化與人工智慧應用案例
     - 半自動寫文章
@@ -4582,23 +4582,23 @@
     
     LangChain Notes
     
-    [Prompt Template & Prompt](assets/Prompt%20Template%20&%20Prompt%2028154713b8fe8110846fda1f2e988f8a.md)
+    [Prompt Template & Prompt](subpages/Prompt%20Template%20%26%20Prompt.md)
     
-    [Messages](assets/Messages%2028154713b8fe810380f6fd4dd1c2ced4.md)
+    [Messages](subpages/Messages.md)
     
-    [Chat Prompt Template & Chat Prompt-1](assets/Chat%20Prompt%20Template%20&%20Chat%20Prompt-1%2028154713b8fe812cb3c0de2f18c8f804.md)
+    [Chat Prompt Template & Chat Prompt-1](subpages/Chat%20Prompt%20Template%20%26%20Chat%20Prompt-1.md)
     
-    [Chat Prompt Template & Chat Prompt-2](assets/Chat%20Prompt%20Template%20&%20Chat%20Prompt-2%2028154713b8fe8194bc84f61f30b8b36a.md)
+    [Chat Prompt Template & Chat Prompt-2](subpages/Chat%20Prompt%20Template%20%26%20Chat%20Prompt-2.md)
     
-    [Partial Variables in Prompt Template-1](assets/Partial%20Variables%20in%20Prompt%20Template-1%2028154713b8fe8163bb79c68a1d0fabf6.md)
+    [Partial Variables in Prompt Template-1](subpages/Partial%20Variables%20in%20Prompt%20Template-1.md)
     
-    [Partial Variables in Prompt Template-2](assets/Partial%20Variables%20in%20Prompt%20Template-2%2028154713b8fe817fb289da68af7287e1.md)
+    [Partial Variables in Prompt Template-2](subpages/Partial%20Variables%20in%20Prompt%20Template-2.md)
     
-    [LLM vs. Chat Model](assets/LLM%20vs%20Chat%20Model%2028154713b8fe81d48954ea654a8c7526.md)
+    [LLM vs. Chat Model](subpages/LLM%20vs%20Chat%20Model.md)
     
-    [Output Parser](assets/Output%20Parser%2028154713b8fe8141a1d5de8e552fe1fd.md)
+    [Output Parser](subpages/Output%20Parser.md)
     
-    [String Output Parser](assets/String%20Output%20Parser%2028154713b8fe8150bfabc68a5db80127.md)
+    [String Output Parser](subpages/String%20Output%20Parser.md)
     
 - **Day3 Fine-tuning**
     
@@ -4708,7 +4708,7 @@
 
 # 補充：
 
-[2025年IBM舉辦的企業級RAG挑戰第一名演算法](assets/2025%E5%B9%B4IBM%E8%88%89%E8%BE%A6%E7%9A%84%E4%BC%81%E6%A5%AD%E7%B4%9ARAG%E6%8C%91%E6%88%B0%E7%AC%AC%E4%B8%80%E5%90%8D%E6%BC%94%E7%AE%97%E6%B3%95%2028154713b8fe81568796c75e695173cc.md)
+[2025年IBM舉辦的企業級RAG挑戰第一名演算法](subpages/2025%E5%B9%B4IBM%E8%88%89%E8%BE%A6%E7%9A%84%E4%BC%81%E6%A5%AD%E7%B4%9ARAG%E6%8C%91%E6%88%B0%E7%AC%AC%E4%B8%80%E5%90%8D%E6%BC%94%E7%AE%97%E6%B3%95.md)
 
 探索 DeepSeek Model-Related Papers
 
@@ -4718,7 +4718,7 @@
 
 About: 陳伶志博士, 台灣人工智慧學校執行長。他擁有豐富的學術與實務經驗，任職中央研究院資訊科學研究所研究員、資訊服務處處長，並積極參與政府與學術機構的 AI 相關諮詢工作
 
-[停止使用RAG，改用CAG吧！🚫 中研院資訊所 黃瀚萱 助研究員跟政大資科合作的論文！🌟](assets/%E5%81%9C%E6%AD%A2%E4%BD%BF%E7%94%A8RAG%EF%BC%8C%E6%94%B9%E7%94%A8CAG%E5%90%A7%EF%BC%81%F0%9F%9A%AB%20%E4%B8%AD%E7%A0%94%E9%99%A2%E8%B3%87%E8%A8%8A%E6%89%80%20%E9%BB%83%E7%80%9A%E8%90%B1%20%E5%8A%A9%E7%A0%94%E7%A9%B6%E5%93%A1%E8%B7%9F%E6%94%BF%E5%A4%A7%E8%B3%87%E7%A7%91%E5%90%88%E4%BD%9C%E7%9A%84%E8%AB%96%E6%96%87%EF%BC%81%F0%9F%8C%9F%2028154713b8fe8119b089c3cc6596c5a5.md)
+[停止使用RAG，改用CAG吧！🚫 中研院資訊所 黃瀚萱 助研究員跟政大資科合作的論文！🌟](subpages/%E5%81%9C%E6%AD%A2%E4%BD%BF%E7%94%A8RAG%EF%BC%8C%E6%94%B9%E7%94%A8CAG%E5%90%A7%EF%BC%81%F0%9F%9A%AB%20%E4%B8%AD%E7%A0%94%E9%99%A2%E8%B3%87%E8%A8%8A%E6%89%80%20%E9%BB%83%E7%80%9A%E8%90%B1%20%E5%8A%A9%E7%A0%94%E7%A9%B6%E5%93%A1%E8%B7%9F%E6%94%BF%E5%A4%A7%E8%B3%87%E7%A7%91%E5%90%88%E4%BD%9C%E7%9A%84%E8%AB%96%E6%96%87%EF%BC%81%F0%9F%8C%9F.md)
 
 https://docs.google.com/document/d/1AwylUdyciJhvYn-64ltpe79UL7_G-BmNwqs4NNt4oQ0/edit?_bhlid=a9384dea1b6efd24178e4dbfdba0008c121b8835&tab=t.0#heading=h.y0vtu1yxeknu
 
