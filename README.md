@@ -25,6 +25,29 @@
 
 ---
 
+## 📄 子頁面（Subpages）
+
+### LangChain 教學
+- [Prompt Template & Prompt](subpages/Prompt%20Template%20%26%20Prompt.md)
+- [Messages](subpages/Messages.md)
+- [Chat Prompt Template & Chat Prompt (1)](subpages/Chat%20Prompt%20Template%20%26%20Chat%20Prompt-1.md)
+- [Chat Prompt Template & Chat Prompt (2)](subpages/Chat%20Prompt%20Template%20%26%20Chat%20Prompt-2.md)
+- [Partial Variables in Prompt Template (1)](subpages/Partial%20Variables%20in%20Prompt%20Template-1.md)
+- [Partial Variables in Prompt Template (2)](subpages/Partial%20Variables%20in%20Prompt%20Template-2.md)
+- [LLM vs Chat Model](subpages/LLM%20vs%20Chat%20Model.md)
+- [Output Parser](subpages/Output%20Parser.md)
+- [String Output Parser](subpages/String%20Output%20Parser.md)
+
+### 工具與設定
+- [課前安裝軟體](subpages/%E8%AA%B2%E5%89%8D%E5%AE%89%E8%A3%9D%E8%BB%9F%E9%AB%94.md)
+- [導入自動化評估方式](subpages/%E5%B0%8E%E5%85%A5%E8%87%AA%E5%8B%95%E5%8C%96%E8%A9%95%E4%BC%B0%E6%96%B9%E5%BC%8F.md)
+
+### 補充研究
+- [2025年 IBM 企業級 RAG 挑戰第一名演算法](subpages/2025%E5%B9%B4IBM%E8%88%89%E8%BE%A6%E7%9A%84%E4%BC%81%E6%A5%AD%E7%B4%9ARAG%E6%8C%91%E6%88%B0%E7%AC%AC%E4%B8%80%E5%90%8D%E6%BC%94%E7%AE%97%E6%B3%95.md)
+- [停止使用 RAG，改用 CAG 吧！🚫（中研院 黃瀚萱 × 政大資科）](subpages/%E5%81%9C%E6%AD%A2%E4%BD%BF%E7%94%A8RAG%EF%BC%8C%E6%94%B9%E7%94%A8CAG%E5%90%A7%EF%BC%81%F0%9F%9A%AB%20%E4%B8%AD%E7%A0%94%E9%99%A2%E8%B3%87%E8%A8%8A%E6%89%80%20%E9%BB%83%E7%80%9A%E8%90%B1%20%E5%8A%A9%E7%A0%94%E7%A9%B6%E5%93%A1%E8%B7%9F%E6%94%BF%E5%A4%A7%E8%B3%87%E7%A7%91%E5%90%88%E4%BD%9C%E7%9A%84%E8%AB%96%E6%96%87%EF%BC%81%F0%9F%8C%9F.md)
+
+---
+
 ## 📂 資料夾結構
 
 ```
