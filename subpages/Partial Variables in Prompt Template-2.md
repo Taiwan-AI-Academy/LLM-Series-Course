@@ -1,6 +1,6 @@
 # Partial Variables in Prompt Template-2
 
-![image.png](../assets/Partial Variables in Prompt Template-2/image.png)
+![image.png](../assets/Partial%20Variables%20in%20Prompt%20Template-2/image.png)
 
 這張圖詳細介紹了 **部分變數 (Partial Variables)** 在 LangChain 中的兩種使用方式，包括如何更新 Prompt Template 和如何在模板中定義部分變數。以下是對圖中每個部分的解釋：
 

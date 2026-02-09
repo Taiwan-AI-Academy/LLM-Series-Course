@@ -1,6 +1,6 @@
 # Chat Prompt Template & Chat Prompt-2
 
-![image.png](../assets/Chat Prompt Template & Chat Prompt-2/image.png)
+![image.png](../assets/Chat%20Prompt%20Template%20%26%20Chat%20Prompt-2/image.png)
 
 這張圖的左邊部分與之前的圖相比，增加了 **Chat Prompt Template 的創建方式的細化**，特別是是否需要指定輸入變數 (input variables)。以下是對左側部分的詳細解釋，以及圖中想表達的差異：
 

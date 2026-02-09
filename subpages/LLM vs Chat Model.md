@@ -1,6 +1,6 @@
 # LLM vs. Chat Model
 
-![image.png](../assets/LLM vs Chat Model/image.png)
+![image.png](../assets/LLM%20vs%20Chat%20Model/image.png)
 
 這張圖描述 LangChain 中 **LLM** 和 **Chat Model** 的互動和輸入/輸出
 

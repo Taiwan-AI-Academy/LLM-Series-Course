@@ -1,6 +1,6 @@
 # Chat Prompt Template & Chat Prompt-1
 
-![image.png](../assets/Chat Prompt Template & Chat Prompt-1/image.png)
+![image.png](../assets/Chat%20Prompt%20Template%20%26%20Chat%20Prompt-1/image.png)
 
 ## **1. Creating Template Object**
 

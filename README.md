@@ -2,6 +2,8 @@
 
 > 大型語言模型、Prompt、RAG、流程自動化、模板
 
+📎 **Notion 原始頁面：** [點此前往](https://sneaky-coffee-392.notion.site/AI-28154713b8fe8086bd1ed1da1b940602?source=copy_link)
+
 **貢獻者：** 孫曉恩、蔡政霖、劉又綺、李福裕、郭柏甫  
 **更新日期：** 2025/10/07  
 **來源：** 財團法人台灣人工智慧學校基金會  
