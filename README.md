@@ -7,7 +7,11 @@
 **來源：** 財團法人台灣人工智慧學校基金會  
 **聯絡信箱：** hi@aiacademy.tw
 
+![AIA Logo](https://sneaky-coffee-392.notion.site/image/attachment%3A981e57a8-4b82-48ea-afcf-6b3fbf4df929%3Aimage.png?table=block&id=28554713b8fe80e5986eedc2d9d5c2cb)
+
 ---
+
+![AI 應用工具包](https://aiacademy.tw/img/home/homebnr-genai-2025.png)
 
 ## 📚 課程架構
 

@@ -1,5 +1,7 @@
 # Part II：大型語言模型實作中階班（n8n）
 
+![課程地圖](https://sneaky-coffee-392.notion.site/image/attachment%3A66dea045-ec2c-4835-8608-bbfe6d676445%3Aimage.png?table=block&id=28154713b8fe8181a6e8d36edfcc3b5f)
+
 ## 一、RPA 與 AI 基礎
 
 ### 課程地圖

@@ -2,6 +2,8 @@
 
 ## 一、課程地圖
 
+![課程地圖](https://sneaky-coffee-392.notion.site/image/attachment%3A93e3f878-131e-4dc4-8201-d997494df8af%3A5caa57ad-8254-460b-8118-f23ddd167b2b.png?table=block&id=28154713b8fe818b9ef9dee38a9aaba9)
+
 高階班涵蓋三大主題：
 1. **LangChain & RAG** — 檢索增強生成實作
 2. **Fine-tuning** — 模型微調技術
